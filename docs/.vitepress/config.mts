@@ -8,8 +8,7 @@ export default defineConfig({
     theme: {
       light: 'github-dark',
       dark: 'github-dark'
-    },
-    lineNumbers: true
+    }
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -24,11 +23,11 @@ export default defineConfig({
           text: '基礎編',
           items: [
             { text: '準備', link: '/basic/introduction.md' },
-            { text: '変更をcommitする', link: '/basic/commit' },
-            { text: 'Pull Requestを出す', link: '/basic/pr' },
+            { text: '変更をコミットする', link: '/basic/commit' },
+            { text: 'プルリクエストを出す', link: '/basic/pr' },
             { text: '補足説明', link: '/basic/supplement' },
-            { text: 'CLIによるGit操作', link: '/basic/cli' },
-            { text: 'SSHの設定', link: '/basic/ssh' }
+            { text: 'おまけ1: CLIによるGit操作', link: '/basic/cli' },
+            { text: 'おまけ2: SSHの設定', link: '/basic/ssh' }
           ]
         }
       ]

@@ -1,11 +1,12 @@
-# CLIによるGit操作
+# おまけ1: CLIによるGit操作
 
 今回VSCode上でやった内容とほぼ一緒の操作
-「CLIって何？」という人は、まず「コマンドライン」という物に少し慣れてから見ることをオススメします。無料の教材などで少しかじってみよう
-`ls`と`cd`でファイルツリーを自由自在に動き回れるくらいの慣れがあれば理解できるはず
+「CLIって何？」という人は、まず「コマンドライン」という物に少し慣れてから見ることをオススメします。Unix-Like講習会が役立つかもしれません。
 
+:::tip おやくそく
 - `$`で示されているのが実行したコマンド
 - コマンドの上に書いてあるのは、今いるディレクトリとブランチ
+:::
 
 Gitea上で`git-lecture2`というリポジトリを作成してから始めてください
 
@@ -33,11 +34,11 @@ trap.txt
 
 # 現在のディレクトリにあるすべてのファイルをステージ
 # (ステージ = ファイルをコミット対象にする)
-~/develop/git-lecture main*
+~/develop/git-lecture2 main*
 $ git add .
 
 # コミット
-~/develop/git-lecture main*
+~/develop/git-lecture2 main*
 $ git commit -m "これがtraP"
 [main (root-commit) be1c792] これがtraP
  1 file changed, 1 insertion(+)
@@ -59,7 +60,7 @@ To https://git-lecture.trap.jp/mehm8128/git-lecture2.git
 branch 'main' set up to track 'origin/main'.
 
 # ブランチを作成し、そのブランチに切り替え
-~/develop/git-lecture main
+~/develop/git-lecture2 main
 $ git switch -c develop
 Switched to a new branch 'develop'
 
@@ -72,13 +73,13 @@ $ nano trap.txt
 $ git add .
 
 # コミット
-~/develop/git-lecture develop*
+~/develop/git-lecture2 develop*
 $ git commit -m "けした"
 [develop dca708f] けした
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 # リモートにプッシュ
-~/develop/git-lecture develop*
+~/develop/git-lecture2 develop*
 $ git push -u origin develop
 Username for 'https://git-lecture.trap.jp': mehm8128
 Password for 'https://mehm8128@git-lecture.trap.jp':

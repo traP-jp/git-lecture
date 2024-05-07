@@ -1,4 +1,4 @@
-# SSHの設定
+# おまけ2: SSHの設定
 
 プッシュしたりプルしたりするときに、何回もユーザー名とパスワードを求められて入力がめんどくさかったのではないでしょうか。そんな人はパスワード認証より安全な、SSH認証を使うようにしましょう。
 
@@ -50,7 +50,7 @@ $ cat ~/.ssh/id_ed25519.pub | pbcopy
 
 ### 接続確認
 
-以下のコマンドを実行してください。
+以下のコマンドを実行してください。`yes/no/[fingerprint]`は yes を選択してください。
 
 ```bash
 $ ssh -T ssh://git@git.trap.jp:2200
@@ -63,10 +63,9 @@ Hi there, {ユーザー名}! You've successfully authenticated with the key name
 If this is unexpected, please log in with password and setup Gitea under another user.
 ```
 
-`yes/no/[fingerprint]`は yes を選択してください。
-
 これで SSH 接続できるようになりました。
 リポジトリをクローンするときは以下の画像のように、SSH の方を選択して URI をコピーするようにしてください。
+
 ![](https://md.trap.jp/uploads/upload_3b5f6128fa73ad298435adb9178310e6.png)
 
 また、既に https の方でクローンしてしまった場合は以下のコマンドで URL を変更できます。
