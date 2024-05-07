@@ -5,18 +5,21 @@ Gitの最も基本的な操作であるコミット (commit) と、それに伴�
 ## ファイルの変更の記録 (`git commit`)
 
 :::details VSCodeでのテキストファイルの作り方
+
 1. 新規ファイルボタンを押す
+
 <img src="https://md.trap.jp/uploads/upload_3aab9a82e3804659d87a911872da158c.png" width="360">
 
 2. ファイル名を入力してEnterを押す(ファイル名は最後に`.txt`をつけてください)
+
 <img src="https://md.trap.jp/uploads/upload_fe86b032138502205b0cec86a7a65818.png" width="360">
 
 3. 入力画面が表示されるので入力
 4. `ctrl + S` / `⌘ + S`で保存
-:::
+   :::
 
-1. VSCodeで`trap.txt`という名前のテキストファイルを作成
-2. `trap.txt`に以下を追記
+5. VSCodeで`trap.txt`という名前のテキストファイルを作成
+6. `trap.txt`に以下を追記
 
 ```
 本サークルは、名称を『東京工業大学デジタル創作同好会traP』とし、読みを『トウキョウコウギョウダイガクデジタルソウサクドウコウカイトラップ』とする。
@@ -63,6 +66,7 @@ Gitの最も基本的な操作であるコミット (commit) と、それに伴�
 ```
 
 8. Gitのタブを開くと下のように差分が表示される
+
 ![](https://md.trap.jp/uploads/upload_48d1d1785a1fa615aa372f4b822b3cbe.png)
 
 :::warning
