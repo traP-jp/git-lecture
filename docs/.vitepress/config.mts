@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'git lecture',
-  description: 'git lecture',
+  title: 'Git講習会 実習テキスト',
+  description: 'traPで行われたGit講習会で使うためのテキストです',
   markdown: {
     theme: {
       light: 'github-dark',
@@ -12,10 +12,7 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    nav: [{ text: 'Home', link: '/' }],
 
     sidebar: {
       '/basic': [
