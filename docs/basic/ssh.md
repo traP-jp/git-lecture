@@ -10,6 +10,8 @@
 
 ```bash
 $ ssh-keygen -t ed25519 -C {GitHub or traQ に登録してあるメールアドレス}
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (~/.ssh/id_ed25519):
 ```
 
 鍵のファイルを作成する場所を聞かれますが、鍵を登録したことがない人はデフォルトでよいのでそのまま Enter を押します。
@@ -21,8 +23,13 @@ $ ssh-keygen -t ed25519 -C {GitHub or traQ に登録してあるメールアド�
 以下のようにパスフレーズの設定を求められますが、そのまま Enter を押します。
 
 ```bash
-Generating public/private ed25519 key pair.
-Enter file in which to save the key (~/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+```
+
+パスフレーズの再入力でも同様に Enter を押します。
+
+```bash
+Enter same passphrase again:
 ```
 
 ### 鍵の登録
@@ -33,7 +40,7 @@ Enter file in which to save the key (~/.ssh/id_ed25519):
 $ cat ~/.ssh/id_ed25519.pub
 ```
 
-出力された文字列をコピーしてください(メールアドレスが含まれていますが、それも含めて 1 行丸ごとコピーしてください)。  
+出力された文字列をコピーしてください(メールアドレスが含まれていますが、それも含めて 1 行丸ごとコピーしてください)。
 Mac の場合は以下のコマンドを実行すると、結果を出力せずにコピーできます。
 
 ```zsh
@@ -73,3 +80,11 @@ If this is unexpected, please log in with password and setup Gitea under another
 ```bash
 $ git remote set-url origin {SSHのURL}
 ```
+
+## 参照
+
+- [SSH について - GitHub Docs](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/about-ssh)
+- [既存の SSH キーの確認 - GitHub Docs](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+- [新しい SSH キーを生成して ssh-agent に追加する - GitHub Docs](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [GitHub アカウントへの新しい SSH キーの追加 - GitHub Docs](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+- [SSH 接続をテストする - GitHub Docs](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
