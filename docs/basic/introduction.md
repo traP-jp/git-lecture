@@ -39,6 +39,8 @@ $ git config --global user.name {userName}
 $ git config --global user.email {userEmail}
 # コミットメッセージをVScodeで書けるようにする設定
 $ git config --global core.editor 'code --wait'
+# デフォルトのブランチをmasterからmainに変更。GitHubやGiteaに合わせます
+$ git config --global init.defaultBranch main
 ```
 
 ## Gitリポジトリの作成
