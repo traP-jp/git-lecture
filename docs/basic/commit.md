@@ -51,7 +51,7 @@ Gitの最も基本的な操作であるコミット (commit) と、それに伴�
 
 :::warning 確認のポップアップが出てきたとき
 
-![ステージングされている変更がなく、コミットできません。すべての変更をステージして、直接コミットしますか？](images/commit-without-staging-warning.png)
+![ステージングされている変更がなく、コミットできません。すべての変更をステージして、直接コミットしますか？](/images/commit-without-staging-warning.png)
 
 これは「はい」をクリックしてください。
 
