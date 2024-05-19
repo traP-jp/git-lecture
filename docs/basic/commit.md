@@ -16,7 +16,8 @@ Gitの最も基本的な操作であるコミット (commit) と、それに伴�
 
 3. 入力画面が表示されるので入力
 4. `ctrl + S` / `⌘ + S`で保存
-   :::
+
+:::
 
 1. VSCodeで`trap.txt`という名前のテキストファイルを作成
 2. `trap.txt`に以下を追記
@@ -32,6 +33,10 @@ Gitの最も基本的な操作であるコミット (commit) と、それに伴�
 
 ![](https://md.trap.jp/uploads/upload_15b9159b7f304ed5f1f514454061f889.png)
 
+:::warning
+`trap.txt` の文字のところをクリックしてください！　横のボタンではありません！
+:::
+
 4. `trap.txt`の右側の`+`ボタンをクリック
 
 :::tip
@@ -43,6 +48,28 @@ Gitの最も基本的な操作であるコミット (commit) と、それに伴�
 5. 画像と同じ場所に`これがtraP`というコミットメッセージを入力し、`コミット`をクリック
 
 ![](https://md.trap.jp/uploads/upload_0335d59f1d6469a3ab1b44fa7b756de8.png)
+
+:::warning 確認のポップアップが出てきたとき
+
+![ステージングされている変更がなく、コミットできません。すべての変更をステージして、直接コミットしますか？](images/commit-without-staging-warning.png)
+
+これは「はい」をクリックしてください。
+
+4番の手順をスキップしてしまったときに発生しますが「はい」を押すことで4番の手順が勝手に行われるので大丈夫です。
+:::
+
+
+:::warning 上手くコミットできないとき
+
+次のような内容のファイルが開かれていませんか？
+
+```
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+```
+
+開かれている場合はそのファイルを一度閉じて、5番の手順からやり直してください。
+:::
 
 6. Git HistoryのVSCode拡張機能を入れ、下の画像のボタンをクリックするとコミットが作成されてることが分かる
 
@@ -91,6 +118,10 @@ Gitの最も基本的な操作であるコミット (commit) と、それに伴�
 2. VSCode上でユーザー名とパスワードを求められるので入力
 
 ![](https://md.trap.jp/uploads/upload_a1a374ee0df24009d2aee637e335eb0e.png)
+
+:::warning
+Macユーザーだと2回目以降にパスワードが求められないことがあるようです。特に入力を求められなかった場合はこの手順をスキップして大丈夫です。
+:::
 
 3. https://git-lecture.trap.jp/ の最初に作ったリポジトリのページにて、コミットが反映されていることを確認
 
