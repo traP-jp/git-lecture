@@ -1,0 +1,48 @@
+## 3. Git を理解する
+
+[![](https://mermaid.ink/img/pako:eNqFUEtLxDAQ_ivDQMmloOvjkpuwshX2pifJZbZJ27BNUuJEXEr_u-lqse5BBwbm8T2YGbEO2qDEohittyxhBNGHdm_eTS8kCG0OqRUlCO6MM1-ThlLPAiaYikJ5OEdreRdp6JYeoA7OWQarpcLrOTYKf7aHSL7uoLEfV5sVpzP1MSQGR9b_IXWzlvre8mkwsnraVfucLyvw7S_w4nDpfGlx978FU5vR1ePDVuGKea8QS3Qm5iN0fu046yg8P1ChzKWmeJzlp4yjxOH55GuUHJMpMQ2a2GwttZEcyob6tzwdyL-GsPTTJ3BTgDM?type=png)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNqFUEtLxDAQ_ivDQMmloOvjkpuwshX2pifJZbZJ27BNUuJEXEr_u-lqse5BBwbm8T2YGbEO2qDEohittyxhBNGHdm_eTS8kCG0OqRUlCO6MM1-ThlLPAiaYikJ5OEdreRdp6JYeoA7OWQarpcLrOTYKf7aHSL7uoLEfV5sVpzP1MSQGR9b_IXWzlvre8mkwsnraVfucLyvw7S_w4nDpfGlx978FU5vR1ePDVuGKea8QS3Qm5iN0fu046yg8P1ChzKWmeJzlp4yjxOH55GuUHJMpMQ2a2GwttZEcyob6tzwdyL-GsPTTJ3BTgDM)
+
+
+### コミットについて
+
+各コミットは、変更後のファイルの情報（変更点のみではなく変更後のファイル丸々）と、1つ前のコミットハッシュ、コミットした人と日時を保存している。
+
+:::info
+**コミットハッシュについて**
+
+**コミットハッシュ**は、各コミットについている16進数の文字列の事を指す。いわばコミットのIDみたいなもの。コミットのハッシュ値と呼ぶこともある。
+GitHub上などではよく先頭7文字を見るが、`git log` 等を叩くと実際のハッシュ値は16進数の40文字からなることが分かる。
+
+**ハッシュ**とは、入力データをもとに生成される乱数のようなもの。ハッシュについて説明するとかなり時間がかかってしまうので、ここでは割愛する。（ハッシュだけで講習会が立てられそう。）
+:::
+
+### ステージについて
+
+`git add` を実行するとファイルがステージングされる、と説明したが、この点をもう少しだけ詳細に解説する。
+`git add` を実行すると、対象のファイルが丸々**ステージエリア**にコピーされる。ステージエリアは「仮コミット」みたいな物だと考えると分かりやすいかもしれない。
+だから、addを実行したあとに対象ファイルを編集し直してもすぐにステージエリアには反映されない。反映させたい場合は、もう一度 `add` を実行する必要がある。
+
+### ブランチについて
+
+各ブランチは、上記画像を見るとmainブランチなら青色部分の全コミットの情報を持っていそうに見えるが、実際は最新1コミットのハッシュ値だけ（画像の□のコミット）を保管している。用語を用いて説明すると、**ブランチはコミットを指すポインタ**である。
+
+ブランチが参照しているコミットと、連鎖してつながっているコミットの情報をもとにして各コミットでの状態を管理している。
+
+### HEAD について
+
+`git log` で表示されるとコミットに、ブランチの名前と一緒に `HEAD` の文字がついている事がわかる。`HEAD` は現在作業しているコミットを指している。大抵はブランチに HEAD が紐付いている。
+
+### コミットするときに起きる動作
+
+[![](https://mermaid.ink/img/pako:eNqFUEtLxDAQ_ivDQMmloOvjkpuwshX2pifJZbZJ27BNUuJEXEr_u-lqse5BBwbm8T2YGbEO2qDEohittyxhBNGHdm_eTS8kCG0OqRUlCO6MM1-ThlLPAiaYikJ5OEdreRdp6JYeoA7OWQarpcLrOTYKf7aHSL7uoLEfV5sVpzP1MSQGR9b_IXWzlvre8mkwsnraVfucLyvw7S_w4nDpfGlx978FU5vR1ePDVuGKea8QS3Qm5iN0fu046yg8P1ChzKWmeJzlp4yjxOH55GuUHJMpMQ2a2GwttZEcyob6tzwdyL-GsPTTJ3BTgDM?type=png)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNqFUEtLxDAQ_ivDQMmloOvjkpuwshX2pifJZbZJ27BNUuJEXEr_u-lqse5BBwbm8T2YGbEO2qDEohittyxhBNGHdm_eTS8kCG0OqRUlCO6MM1-ThlLPAiaYikJ5OEdreRdp6JYeoA7OWQarpcLrOTYKf7aHSL7uoLEfV5sVpzP1MSQGR9b_IXWzlvre8mkwsnraVfucLyvw7S_w4nDpfGlx978FU5vR1ePDVuGKea8QS3Qm5iN0fu046yg8P1ChzKWmeJzlp4yjxOH55GuUHJMpMQ2a2GwttZEcyob6tzwdyL-GsPTTJ3BTgDM)
+
+さきほどの図の状態で、コミットを打つ。今、HEAD は fix/1 にあるので…
+
+[![](https://mermaid.ink/img/pako:eNqFUE1rwzAM_StCEHwJbN3XwbdBSzPobTsNX9TYcUxjO3j2WAn573O6hWZlbAKDpPf0nqUBay8VciyKwTgTOQzAOq936l11jAOTap80K4HFVln11WkodZHBCGNRCAen0CZuA_XtXAPU3loTwUgu8HqKlcAzug_k6hYa83G1Wsy0qj74FMGScX9I3SylvtF47BWvnrbVLr-XBfn2B3l2uHS-tLj7xeKM3v__gUg6s6vN41rgYvJBIJZoVcgrynz4YdIReDqvQJ5TSeEwyY-ZRyn656OrkceQVImplxTV2pAOZJE31L3lbk_u1fu5Hj8B0tCHzw?type=png)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNqFUE1rwzAM_StCEHwJbN3XwbdBSzPobTsNX9TYcUxjO3j2WAn573O6hWZlbAKDpPf0nqUBay8VciyKwTgTOQzAOq936l11jAOTap80K4HFVln11WkodZHBCGNRCAen0CZuA_XtXAPU3loTwUgu8HqKlcAzug_k6hYa83G1Wsy0qj74FMGScX9I3SylvtF47BWvnrbVLr-XBfn2B3l2uHS-tLj7xeKM3v__gUg6s6vN41rgYvJBIJZoVcgrynz4YdIReDqvQJ5TSeEwyY-ZRyn656OrkceQVImplxTV2pAOZJE31L3lbk_u1fu5Hj8B0tCHzw)
+
+fix/1 ブランチの先頭に更にコミットが生成されて、HEAD とブランチが参照するコミット（□）が移動している。
+
+---
+
+以上の事を頭に置いた上で、以下の git サブコマンドを理解して欲しい。
+
