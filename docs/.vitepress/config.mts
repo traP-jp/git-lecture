@@ -38,6 +38,22 @@ export default defineConfig({
             { text: 'おまけ13: VSCode以外のGUI操作', link: '/basic/github-desktop' }
           ]
         }
+      ],
+      'advanced': [
+        {
+          text: '発展編',
+          items: [
+            { text: '目次', link: '/advanced/'},
+            { text: '0. 導入', link: '/advanced/0-intro'},
+            { text: '1. Git と GitHub', link: '/advanced/1-git-n-github'},
+            { text: '2. プロジェクト', link: '/advanced/2-project/'},
+            { text: '3. コミットの作法', link: '/advanced/3-commit/'},
+            { text: '4. Git CLI', link: '/advanced/4-cli/', items: [
+              { text: 'Git の仕組み', link: '/advanced/4-cli/system'},
+            ]},
+            { text: '終わりに (まだ）', link: '/advanced/conclusion'},
+          ]
+        }
       ]
     },
 

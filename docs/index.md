@@ -11,4 +11,5 @@ features:
     link: /basic/index.md
   - title: 発展編 (準備中)
     details: Git講習会 発展編で扱う内容
+    link: /advanced/index.md
 ---
