@@ -12,7 +12,7 @@ Git リポジトリの認証に用いられる SSH キーというものを登�
 [git-lecture.trap.jp](https://git-lecture.trap.jp/) の Gitea は、traP の普段使いの Gitea（[git.trap.jp](https://git.trap.jp/)）とは別でこの Git 講習会の期間のみ運用されています。この資料をあとから追っている場合は前者（[git-lecture.trap.jp](https://git-lecture.trap.jp/)）が使えないことがあるので、代わりに後者（[git.trap.jp](https://git.trap.jp/)）をお使いください。
 :::
 
-[git-lecture.trap.jp](https://git-lecture.trap.jp/) にアクセスしたら、右上のボタンからログインしてください。
+[git-lecture.trap.jp](https://git-lecture.trap.jp/) にアクセスしたら、右上のボタンからログインしておきましょう。
 
 ## SSH キーの生成
 
