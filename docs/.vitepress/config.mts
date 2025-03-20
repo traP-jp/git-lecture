@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'git text',
+  title: 'Git 講習会',
   description: 'traPで行われたGit講習会で使うためのテキストです',
   markdown: {
     theme: {
@@ -17,24 +17,21 @@ export default defineConfig({
     },
     nav: [{ text: 'Home', link: '/' }],
 
-    sidebar: {
-      '/basic': [
-        {
-          text: '前編 - Git 個人開発',
-          items: [
-            { text: 'はじめに', link: '/basic/introduction.md' },
-            { text: '準備', link: '/basic/setup.md' }
-          ]
-        },
-        {
-          text: '後編 - Git 共同開発',
-          items: [
-            { text: 'はじめに', link: '/basic/introduction.md' },
-            { text: '準備', link: '/basic/setup.md' }
-          ]
-        }
-      ]
-    },
+    sidebar: [
+      {
+        text: '前編 - Git 個人開発',
+        link: '/text/chapter-1/',
+        items: [{ text: '1. Gitea アカウントの作成', link: '/text/chapter-1/setup' }]
+      },
+      {
+        text: '後編 - Git 共同開発',
+        link: '/text/chapter-2/',
+        items: [
+          { text: 'はじめに', link: '/text/chapter-2/introduction' },
+          { text: '準備', link: '/text/chapter-2/introduction' }
+        ]
+      }
+    ],
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/traP-jp/git-lecture' }]
   }

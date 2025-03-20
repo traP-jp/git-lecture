@@ -9,8 +9,9 @@ hero:
 
 features:
   - title: 前編 - Git 個人開発
-    details: 個人開発で Git を使う方法とその利点について紹介します。
-    link: /basic/introduction.md
+    details: 個人開発で Git を使う方法とその利点について
+    link: /text/chapter-1/
   - title: 後編 - Git 共同開発
-    details: 共同開発で Git を使う方法とその利点について紹介します。
+    details: 共同開発で Git を使う方法とその利点について
+    link: /text/chapter-2/
 ---
