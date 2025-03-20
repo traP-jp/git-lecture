@@ -23,7 +23,9 @@ export default defineConfig({
         link: '/text/chapter-1/',
         items: [
           { text: '必要なツール', link: '/text/chapter-1/requirements' },
-          { text: 'CLI と GUI', link: '/text/chapter-1/cliandgui' }
+          { text: 'SSH キーの登録', link: '/text/chapter-1/gitea-ssh' },
+          { text: 'CLI と GUI', link: '/text/chapter-1/cli-and-gui' },
+          { text: 'Git リポジトリの作成', link: '/text/chapter-1/make-repo' }
         ]
       },
       {
