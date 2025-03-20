@@ -21,7 +21,10 @@ export default defineConfig({
       {
         text: '前編 - Git 個人開発',
         link: '/text/chapter-1/',
-        items: [{ text: '1. Gitea アカウントの作成', link: '/text/chapter-1/setup' }]
+        items: [
+          { text: '必要なツール', link: '/text/chapter-1/requirements' },
+          { text: 'CLI と GUI', link: '/text/chapter-1/cliandgui' }
+        ]
       },
       {
         text: '後編 - Git 共同開発',
