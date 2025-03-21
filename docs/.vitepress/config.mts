@@ -37,9 +37,10 @@ export default defineConfig({
         items: [
           { text: 'リポジトリ', link: '/text/chapter-2/repository' },
           { text: 'ブランチを生やす', link: '/text/chapter-2/grow-a-branch' },
-          { text: 'ブランチのマージ', link: '/text/chapter-2/merge' },
+          { text: 'プルリクエストのマージ', link: '/text/chapter-2/merge' },
           { text: '共同開発の基本', link: '/text/chapter-2/team-development' },
-          { text: 'コンフリクトの解決', link: '/text/chapter-2/conflict' }
+          { text: 'コンフリクトの解決', link: '/text/chapter-2/conflict' },
+          { text: 'マージのしくみ', link: '/text/chapter-2/how-merging-works' }
         ]
       },
       {
