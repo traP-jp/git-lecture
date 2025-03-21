@@ -8,7 +8,7 @@
 
 以下の図は 1 本のブランチ（ここでは main という名前のブランチ）に関する操作の一覧です。
 
-![](https://md.trap.jp/uploads/upload_fe0acf2d984af0a2625cffd252fb1d02.png)
+![](https://md.trap.jp/uploads/upload_3d5ed48e0b6fa498cc42afb150208076.png)
 
 全体が同期するので 1 本と見なすことが一般的ですが、実際には
 

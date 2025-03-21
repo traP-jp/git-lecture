@@ -35,8 +35,10 @@ export default defineConfig({
         text: '後編 - Git 共同開発',
         link: '/text/chapter-2/',
         items: [
-          { text: 'はじめに', link: '/text/chapter-2/introduction' },
-          { text: '準備', link: '/text/chapter-2/introduction' }
+          { text: 'リポジトリ', link: '/text/chapter-2/repository' },
+          { text: 'ブランチを生やす', link: '/text/chapter-2/grow-a-branch' },
+          { text: 'ブランチのマージ', link: '/text/chapter-2/merge' },
+          { text: '共同開発の基本', link: '/text/chapter-2/team-development' }
         ]
       }
     ],
