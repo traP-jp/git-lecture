@@ -22,7 +22,7 @@ Git リポジトリの認証に用いられる SSH キーというものを登�
 $ ssh-keygen -t ed25519 -C {メールアドレス}
 ```
 
-キーのファイルを作成する場所を聞かれますが、キーを登録したことがない人はデフォルトでよいのでそのまま Enter を押します。
+キーのファイルを作成する場所を聞かれますが、キーを登録したことがない場合はデフォルトでよいのでそのまま Enter を押します。
 
 ```txt
 Generating public/private ed25519 key pair.
@@ -55,7 +55,7 @@ $ cat ~/.ssh/id_ed25519.pub
 
 [SSH / GPGキー - traP Git](https://git.trap.jp/user/settings/keys) にアクセスし、「キーを追加」をクリックします。
 
-「内容」の欄に先ほどコピーした文字列をペーストしてください。SSH キーはデバイスに保存されるので、複数のデバイスをお使いの場合は今操作中のデバイスを特定できるような「キー名」を付けることが望ましいです。
+「内容」の欄に先ほどコピーした公開鍵をペーストしてください。SSH キーはデバイスに保存されるので、複数のデバイスをお使いの場合は今操作中のデバイスを特定できるような「キー名」を付けておくことをお勧めします。
 
 ![](https://md.trap.jp/uploads/upload_b6b7cca28a313b327d6026693a3662b5.png)
 
@@ -69,7 +69,7 @@ $ cat ~/.ssh/id_ed25519.pub
 $ ssh -T ssh://git@git.trap.jp:2200
 ```
 
-以下のように表示されたら成功です。
+以下のように表示されたら、Gitea との SSH 接続に成功しています。
 
 ```txt
 Hi there, {ユーザー名}! You've successfully authenticated with the key named {キー名}, but Gitea does not provide shell access.
