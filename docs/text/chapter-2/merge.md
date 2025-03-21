@@ -4,7 +4,7 @@ sub ブランチの README.md に変更を加えます。ちょっと書き足�
 
 ![](https://md.trap.jp/uploads/upload_8951eff842715962edeba4d17258f8b3.png)
 
-すると左下のコミットグラフの色が変わります。origin/main（main のリモート追跡ブランチ）から新たに枝が生えたことが視覚的にわかりやすいです。
+すると左下のコミットグラフの色が変わります。橙色の origin/main（main のリモート追跡ブランチ）から新たに枝が生えたことが視覚的にわかりやすいです。
 
 ![](https://md.trap.jp/uploads/upload_7c97acdb362da12cf9269f208676bebc.png)
 
