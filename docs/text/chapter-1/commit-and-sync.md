@@ -23,7 +23,7 @@ VSCode を開き、ウィンドウにデスクトップのディレクトリ myd
 3. 「コミット」ボタンが「変更の同期」ボタンに切り替わるので、それも押す
 
 ![](https://md.trap.jp/uploads/upload_1fd20f00fedfc5586a5b0e23e0762b33.png)
-<p style="text-align: center; margin: -10px 0 20px 0">手順 2 の途中</p>
+<p style="font-size: 12px; text-align: center; margin: -16px 0 20px 0">手順 2 の途中</p>
 
 :::info COMMIT_EDITMSG
 入力欄（コミットメッセージ）が空欄のまま「コミット」ボタンを押すと VSCode が英語が書かれた謎のファイルを表示して脅かして来ますが、単純に「入力欄が空欄だよ〜」と言われているだけです。開かれたファイルを閉じてコミットメッセージを書くことで問題なくコミットできます。

@@ -28,7 +28,7 @@ export default defineConfig({
           { text: 'リポジトリの作成', link: '/text/chapter-1/make-repo' },
           { text: 'コミットと同期', link: '/text/chapter-1/commit-and-sync' },
           { text: 'ブランチ', link: '/text/chapter-1/branch' },
-          { text: '補足 - Git の操作の実体', link: '/text/chapter-1/git-commands' }
+          { text: 'Git の操作の実体', link: '/text/chapter-1/git-commands' }
         ]
       },
       {
@@ -38,8 +38,13 @@ export default defineConfig({
           { text: 'リポジトリ', link: '/text/chapter-2/repository' },
           { text: 'ブランチを生やす', link: '/text/chapter-2/grow-a-branch' },
           { text: 'ブランチのマージ', link: '/text/chapter-2/merge' },
-          { text: '共同開発の基本', link: '/text/chapter-2/team-development' }
+          { text: '共同開発の基本', link: '/text/chapter-2/team-development' },
+          { text: 'コンフリクトの解決', link: '/text/chapter-2/conflict' }
         ]
+      },
+      {
+        text: 'あとがき',
+        link: '/text/afterword'
       }
     ],
 
