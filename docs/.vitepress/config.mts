@@ -40,7 +40,8 @@ export default defineConfig({
           { text: 'プルリクエストのマージ', link: '/text/chapter-2/merge' },
           { text: '共同開発の基本', link: '/text/chapter-2/team-development' },
           { text: 'コンフリクトの解決', link: '/text/chapter-2/conflict' },
-          { text: 'マージのしくみ', link: '/text/chapter-2/how-merging-works' }
+          { text: 'マージのしくみ', link: '/text/chapter-2/how-merging-works' },
+          { text: '大規模開発のすすめ', link: '/text/chapter-2/best-practice' }
         ]
       },
       {
