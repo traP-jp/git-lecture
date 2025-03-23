@@ -3,12 +3,15 @@
 layout: home
 
 hero:
-  name: 'Git講習会 実習テキスト'
+  name: "Git"
+  text: "Basic git lecture class"
+  tagline: "Git 講習会テキスト"
 
 features:
-  - title: 基礎編
-    details: Git講習会で扱う内容
-    link: /basic/index.md
-  - title: 発展編 (準備中)
-    details: Git講習会 発展編で扱う内容
+  - title: 前編 - Git 個人開発
+    details: 個人開発で Git を使う方法とその利点について
+    link: /text/chapter-1/
+  - title: 後編 - Git 共同開発
+    details: 共同開発で Git を使う方法とその利点について
+    link: /text/chapter-2/
 ---

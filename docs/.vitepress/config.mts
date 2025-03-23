@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'Git講習会 実習テキスト',
+  title: 'Git 講習会',
   description: 'traPで行われたGit講習会で使うためのテキストです',
   markdown: {
     theme: {
@@ -12,34 +12,55 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
     nav: [{ text: 'Home', link: '/' }],
 
-    sidebar: {
-      '/basic': [
-        {
-          text: '基礎編',
-          items: [
-            { text: '準備', link: '/basic/introduction.md' },
-            { text: '変更をコミットする', link: '/basic/commit' },
-            { text: 'プルリクエストを出す', link: '/basic/pr' },
-            { text: '補足説明', link: '/basic/supplement' },
-            { text: 'おまけ1: CLIによるGit操作', link: '/basic/cli' },
-            { text: 'おまけ2: SSHの設定', link: '/basic/ssh' },
-            { text: 'おまけ3: .gitignore', link: '/basic/gitignore' },
-            { text: 'おまけ4: 修正コミット', link: '/basic/commit-amend' },
-            { text: 'おまけ5: 現在の状況を確認する', link: '/basic/status' },
-            { text: 'おまけ6: 容量の大きいファイルを扱う', link: '/basic/lfs' },
-            { text: 'おまけ7: 変更をコミットせず保存する', link: '/basic/stash' },
-            { text: 'おまけ8: コミットを整理する', link: '/basic/rebase' },
-            { text: 'おまけ9: コミットに印をつける', link: '/basic/tag' },
-            { text: 'おまけ10: 一部のコミットだけ取り込む', link: '/basic/cherry-pick' },
-            { text: 'おまけ11: 変更を消して過去に戻る', link: '/basic/reset' },
-            { text: 'おまけ12: 使い方を見る', link: '/basic/help' },
-            { text: 'おまけ13: VSCode以外のGUI操作', link: '/basic/github-desktop' }
-          ]
-        }
-      ]
-    },
+    sidebar: [
+      {
+        text: '前編 - Git 個人開発',
+        link: '/text/chapter-1/',
+        items: [
+          {
+            text: '事前準備',
+            collapsed: false,
+            items: [
+              { text: '必要なツール', link: '/text/chapter-1/requirements' },
+              { text: 'SSH キーの登録', link: '/text/chapter-1/gitea-ssh' }
+            ]
+          },
+          { text: 'CLI と GUI', link: '/text/chapter-1/cli-and-gui' },
+          { text: 'リポジトリの作成', link: '/text/chapter-1/make-repo' },
+          { text: 'コミットと同期', link: '/text/chapter-1/commit-and-sync' },
+          { text: 'ブランチ', link: '/text/chapter-1/branch' },
+          { text: 'Git の操作の実体', link: '/text/chapter-1/git-commands' }
+        ]
+      },
+      {
+        text: '後編 - Git 共同開発',
+        link: '/text/chapter-2/',
+        items: [
+          { text: 'リポジトリ', link: '/text/chapter-2/repository' },
+          { text: 'ブランチを生やす', link: '/text/chapter-2/grow-a-branch' },
+          { text: 'プルリクエストのマージ', link: '/text/chapter-2/merge' },
+          { text: '共同開発の基本', link: '/text/chapter-2/team-development' },
+          {
+            text: '発展',
+            collapsed: false,
+            items: [
+              { text: 'コンフリクトの解決', link: '/text/chapter-2/conflict' },
+              { text: 'マージのしくみ', link: '/text/chapter-2/how-merging-works' },
+              { text: '共同開発のすすめ', link: '/text/chapter-2/best-practice' }
+            ]
+          }
+        ]
+      },
+      {
+        text: 'あとがき',
+        link: '/text/afterword'
+      }
+    ],
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/traP-jp/git-lecture' }]
   }

@@ -1,4 +1,4 @@
 import DefaultTheme from 'vitepress/theme'
-import './trap.css'
+import './custom.css'
 
 export default DefaultTheme
