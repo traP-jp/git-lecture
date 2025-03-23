@@ -22,8 +22,14 @@ export default defineConfig({
         text: '前編 - Git 個人開発',
         link: '/text/chapter-1/',
         items: [
-          { text: '必要なツール', link: '/text/chapter-1/requirements' },
-          { text: 'SSH キーの登録', link: '/text/chapter-1/gitea-ssh' },
+          {
+            text: '事前準備',
+            collapsed: false,
+            items: [
+              { text: '必要なツール', link: '/text/chapter-1/requirements' },
+              { text: 'SSH キーの登録', link: '/text/chapter-1/gitea-ssh' }
+            ]
+          },
           { text: 'CLI と GUI', link: '/text/chapter-1/cli-and-gui' },
           { text: 'リポジトリの作成', link: '/text/chapter-1/make-repo' },
           { text: 'コミットと同期', link: '/text/chapter-1/commit-and-sync' },
@@ -39,9 +45,15 @@ export default defineConfig({
           { text: 'ブランチを生やす', link: '/text/chapter-2/grow-a-branch' },
           { text: 'プルリクエストのマージ', link: '/text/chapter-2/merge' },
           { text: '共同開発の基本', link: '/text/chapter-2/team-development' },
-          { text: 'コンフリクトの解決', link: '/text/chapter-2/conflict' },
-          { text: 'マージのしくみ', link: '/text/chapter-2/how-merging-works' },
-          { text: '大規模開発のすすめ', link: '/text/chapter-2/best-practice' }
+          {
+            text: '発展',
+            collapsed: false,
+            items: [
+              { text: 'コンフリクトの解決', link: '/text/chapter-2/conflict' },
+              { text: 'マージのしくみ', link: '/text/chapter-2/how-merging-works' },
+              { text: '共同開発のすすめ', link: '/text/chapter-2/best-practice' }
+            ]
+          }
         ]
       },
       {

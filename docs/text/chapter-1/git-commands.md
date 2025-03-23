@@ -71,11 +71,11 @@
     <td style="text-align: center"><strong>commit</strong></td>
   </tr>
   <tr>
-    <td>デスクトップの mydrive で「変更を同期」ボタンを押す</td>
+    <td>デスクトップの mydrive で「変更を同期 ↑1」ボタンを押す</td>
     <td style="text-align: center"><strong>push</strong></td>
   </tr>
   <tr>
-    <td>ダウンロードの mydrive で「変更の同期」ボタンを押す</td>
+    <td>ダウンロードの mydrive で「変更の同期 ↓1」ボタンを押す</td>
     <td style="text-align: center"><strong>pull</strong></td>
   </tr>
 </table>
