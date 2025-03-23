@@ -8,7 +8,7 @@ mydrive リポジトリで main ブランチから sub ブランチを生やし�
 
 コンフリクトが発覚するのはプルリクエストを出した直後の Gitea の画面上です。
 
-![](https://md.trap.jp/uploads/upload_aa628555d654142ffdf76c8b43a46f49.png)
+![](https://md.trap.jp/uploads/upload_f031d226198efdc4199c58f6bb6ae89b.png)
 
 共同開発で起きやすいコンフリクトです。
 
@@ -18,7 +18,7 @@ mydrive リポジトリで main ブランチから sub ブランチを生やし�
 
 コンフリクトが発覚するのは VSCode 上で「変更の同期」ボタンを押した瞬間です。
 
-![](https://md.trap.jp/uploads/upload_73ce431131502cb43c47ce3fc6cfc8e6.png)
+![](https://md.trap.jp/uploads/upload_813056da854bdcdec8d46d44a4eae254.png)
 
 main ブランチに直接コミットしながら個人開発をしている時に起きやすいコンフリクトです。
 
@@ -28,11 +28,9 @@ main ブランチに直接コミットしながら個人開発をしている時
 
 マージ競合が発生していることが Gitea の画面で判明したら、マージしようとしているブランチ（この場合は sub ブランチ）にいることを確認し、以下のように選択します。
 
-![](https://md.trap.jp/uploads/upload_14b7413805c4a73632564cbdb42c038d.png)
+![](https://md.trap.jp/uploads/upload_44c9575beccfbbe302310bcd06be67e7.png)
 
-次にウィンドウ上部で以下のように main を選択します。
-
-![](https://md.trap.jp/uploads/upload_30b467cd528ea092623a088464dd77a4.png)
+次にウィンドウ上部で main を選択します。
 
 :::warning 基本的に直接マージはしない
 もしコンフリクトがなかったとすれば、ここまでの操作によって main → sub のマージが実行され、main の変更が sub に反映されます。お察しの通り、もし sub ではなく main にいる状態で逆の操作をすると、**プルリクエストを出すことなく sub → main のマージが実行**されます。
@@ -44,23 +42,23 @@ main ブランチに直接コミットしながら個人開発をしている時
 
 マージ競合が発生している場合は、上の操作の直後に以下のような画面に飛びます。右下の「マージエディターで解決」ボタンを押してください。
 
-![](https://md.trap.jp/uploads/upload_5ede45435ef2a34b0d4a49055de64aa9.png)
+![](https://md.trap.jp/uploads/upload_aee5b36d6370b5d7c8f4d46ff076119e.png)
 
 図のようにエディタ部分が 3 つに分割されます。上 2 つがコンフリクトを起こしている場所の表示で、たった今マージしようとした sub ブランチでの変更は右側「現在のマシン」です。
 
 sub ブランチでの変更を優先したい場合は「現在のマシン を適用する」を押します。main ブランチでの変更を優先したい場合は「受信中 を適用する」を押します。
 
-![](https://md.trap.jp/uploads/upload_30ed91bfe6bb4ff462639f7468f49a1e.png)
+![](https://md.trap.jp/uploads/upload_f89835e91315d0f9da2da2dc6178b515.png)
 
 上の図ではコンフリクトを生じている部分が濃い黄色の枠で囲まれていますが、コンフリクトが解決すると枠が目立たなくなります。全てのコンフリクトを解決したら右下の「マージの完了」ボタンを押してください。
 
 すると、コミットメッセージが予め入力された状態で以下のように「続行」ボタンが表示されるので押します。そのあとの「変更の同期」ボタンまで押すことで、コンフリクトの解決および main → sub のマージが完了します。
 
-![](https://md.trap.jp/uploads/upload_506a8fbe12ad1674ce0ffe73ce488a77.png)
+![](https://md.trap.jp/uploads/upload_4401cf0a67b3ae818726a7c490a3208b.png)
 
 先ほどコンフリクトを告げられた Gitea のページをリロードすると、プルリクエストが「マージコミットを作成」可能な状態になっています。
 
-![](https://md.trap.jp/uploads/upload_4f4432cb1184ab5dde625f014cc7260d.png)
+![](https://md.trap.jp/uploads/upload_29484fdddbddb8d94fab5ae668d0ec10.png)
 
 ## ローカル環境間同期競合の解決
 
@@ -75,7 +73,7 @@ origin/main はリモートブランチ（厳密にはリモート追跡ブラ�
 :::tip 手元のコミットをなかったことにする
 場合によっては「ついうっかりコミットボタンを押してしまっただけなので、コンフリクトの解決だなんて大仰なことはしたくない」ということもあるかも知れません。一度コミットボタンを押してしまってから手元の変更を完全になかったことにするには、以下のように選択して「前回のコミットを元に戻す」を押してください。
 
-![](https://md.trap.jp/uploads/upload_97c357133c28054d4944a8997d90ff46.png)
+![](https://md.trap.jp/uploads/upload_089611b84af93aa3599452e3cf2a7e2d.png)
 
 その後、全てのファイルの変更を破棄して「変更を同期」ボタンを押せば、新たにコミットをすることなく手元の環境をリモートブランチと同じ状態にすることができます。
 :::

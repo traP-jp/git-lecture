@@ -2,15 +2,15 @@
 
 sub ブランチの README.md に変更を加えます。ちょっと書き足して、変更をステージし「sub の変更」とコミットメッセージを書いてコミットしてみます。
 
-![](https://md.trap.jp/uploads/upload_8951eff842715962edeba4d17258f8b3.png)
+![](https://md.trap.jp/uploads/upload_43bb3e66e3e36c7d933d429e8d64113b.png)
 
 すると左下のコミットグラフの色が変わります。橙色の origin/main（main のリモート追跡ブランチ）から新たに枝が生えたことが視覚的にわかりやすいです。
 
-![](https://md.trap.jp/uploads/upload_7c97acdb362da12cf9269f208676bebc.png)
+![](https://md.trap.jp/uploads/upload_167aa3774e5c88d3ecdac3fd1a0de1f7.png)
 
 ここで再度 Gitea に行ってみると、目立つ緑色の帯が出現しています。ブランチへコミットした直後に Gitea を訪れる人はたいていプルリクエストを作成したい人なので、Gitea の側で即座にプルリクエストを作成するボタンを用意してくれています。
 
-![](https://md.trap.jp/uploads/upload_a6d7b6743b67daf7537b96c0c0a751d6.png)
+![](https://md.trap.jp/uploads/upload_c4a8c1675e9803f549d64d4610c7173e.png)
 
 この状態から、以下を順に実行していってください。少し長いですが、基本的には一番目立つボタンを押しながら進んでいけば大丈夫です。もし途中で道に迷ったら TA を呼んでください。
 
@@ -22,11 +22,11 @@ sub ブランチの README.md に変更を加えます。ちょっと書き足�
 
 5 まで実行すると、何かが終わった雰囲気の画面にたどり着きます。
 
-![](https://md.trap.jp/uploads/upload_bfe8e092febe280c0942aa924cf803ab.png)
+![](https://md.trap.jp/uploads/upload_7d422bd519cfcae5134c276b29766361.png)
 
 この状態で VSCode に戻り main ブランチに移ると、矢印が下を向いた「変更の同期」ボタンが点灯して main に変更があったことが知らされます。
 
-![](https://md.trap.jp/uploads/upload_786315a5011ee6333301182d8c55f239.png)
+![](https://md.trap.jp/uploads/upload_6c90b70e3d7c41cff67e52a63af81efe.png)
 
 ボタンを押して同期すると、先ほど sub ブランチで変更した内容が反映されるはずです。ウィンドウ左下のコミットグラフにも注目してみましょう。
 

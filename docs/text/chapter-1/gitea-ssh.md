@@ -1,6 +1,6 @@
 # SSH キーの登録
 
-Git リポジトリの認証に用いられる SSH キーというものを登録します。以下の操作はこの後のテキストを追うために必要ですが、操作の意味はよく分からなくても大丈夫です。
+Git リポジトリを閲覧・編集する権限があることを証明するために用いられる SSH キーというものを登録します。以下の操作はこの後のテキストを追うために必要ですが、操作の意味はよく分からなくても大丈夫です。
 
 ## traP Gitea
 
@@ -22,7 +22,7 @@ Git リポジトリの認証に用いられる SSH キーというものを登�
 $ ssh-keygen -t ed25519 -C {メールアドレス}
 ```
 
-キーのファイルを作成する場所を聞かれますが、キーを登録したことがない場合はデフォルトでよいのでそのまま Enter を押します。
+キーのファイルを作成する場所を聞かれますが、キーを登録したことがない場合はデフォルトでよいので何も入力せず Enter を押します。
 
 ```txt
 Generating public/private ed25519 key pair.
@@ -33,7 +33,7 @@ Enter file in which to save the key (~/.ssh/id_ed25519):
 既に同じ場所に同じファイル名の SSH キーを作成したことがある場合、キーの情報が上書きされてしまうので注意してください。
 :::
 
-以下のようにパスフレーズの設定を求められますが、そのまま Enter を押します。
+以下のようにパスフレーズの設定を求められますが、何も入力せず Enter を押します。
 
 ```txt
 Enter passphrase (empty for no passphrase):
@@ -77,11 +77,3 @@ If this is unexpected, please log in with password and setup Gitea under another
 ```
 
 以上で SSH キーの設定は終了です。
-
-## 参考
-
-- [SSH について - GitHub Docs](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/about-ssh)
-- [既存の SSH キーの確認 - GitHub Docs](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
-- [新しい SSH キーを生成して ssh-agent に追加する - GitHub Docs](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-- [GitHub アカウントへの新しい SSH キーの追加 - GitHub Docs](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-- [SSH 接続をテストする - GitHub Docs](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
