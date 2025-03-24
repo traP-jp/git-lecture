@@ -8,7 +8,8 @@ export default defineConfig({
     theme: {
       light: 'github-dark',
       dark: 'github-dark'
-    }
+    },
+    math: true
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -55,6 +56,11 @@ export default defineConfig({
             ]
           }
         ]
+      },
+      {
+        text: '補足',
+        link: '/text/chapter-3/',
+        items: [{ text: '認証済みコミット', link: '/text/chapter-3/verified' }]
       },
       {
         text: 'あとがき',
