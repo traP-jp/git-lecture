@@ -18,7 +18,7 @@ Microsoft が提供する OneDrive にも同様の機能がありますね。こ
 
 ## リポジトリの作成
 
-Gitea のページから [新しいリポジトリを作成](https://git.trap.jp/repo/create) します。
+Gitea のページから [新しいリポジトリを作成](https://git-lecture.trap.jp/repo/create) します。
 
 - リポジトリ名を "mydrive" とする
 - リポジトリの初期設定にチェックを入れる
