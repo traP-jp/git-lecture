@@ -6,11 +6,11 @@
 
 sub ブランチの README.md に変更を加えます。ちょっと書き足して、変更をステージし「sub の変更」とコミットメッセージを書いてコミットしてみます。
 
-![](https://md.trap.jp/uploads/upload_43bb3e66e3e36c7d933d429e8d64113b.png)
+![](https://md.trap.jp/uploads/upload_3bbab03d3c81bd1fcc22540db66d88ce.png)
 
 すると左下のコミットグラフの色が変わります。橙色の origin/main（main のリモートブランチ）から新たに枝が生えたことが視覚的にわかりやすいです。
 
-![](https://md.trap.jp/uploads/upload_167aa3774e5c88d3ecdac3fd1a0de1f7.png)
+![](https://md.trap.jp/uploads/upload_5b2474dee7a1fef2410e23d8be54d2f1.png)
 
 ## プルリクエストのマージ
 
@@ -32,7 +32,7 @@ sub ブランチの README.md に変更を加えます。ちょっと書き足�
 
 この状態で VSCode に戻り main ブランチに移ると、矢印が下を向いた「変更の同期」ボタンが点灯して main に変更があったことが知らされます。
 
-![](https://md.trap.jp/uploads/upload_6c90b70e3d7c41cff67e52a63af81efe.png)
+![](https://md.trap.jp/uploads/upload_1908dea925806acd5fde109fac5124ad.png)
 
 ボタンを押して同期すると、先ほど sub ブランチで変更した内容が反映されるはずです。ウィンドウ左下のコミットグラフにも注目してみましょう。
 

@@ -6,11 +6,11 @@
 
 VSCode を開き、ウィンドウにデスクトップのディレクトリ mydrive をドラッグ & ドロップすると、VSCode でそのディレクトリを開くことができます。さらに、ウィンドウ左のアクティビティバーからソース管理タブ（○ が 3 つ曲線で繋がれた図形）を開いておきます。
 
-![](https://md.trap.jp/uploads/upload_255985501814ea5bb21efc809c917f6b.png)
+![](https://md.trap.jp/uploads/upload_ab7b01699a147f647ee4877360035b4c.png)
 
 この状態で README.md を編集して保存すると画面に色々変化が生じます。
 
-![](https://md.trap.jp/uploads/upload_47c229573637bc782f4251f62ebdbb0d.png)
+![](https://md.trap.jp/uploads/upload_692f288ff341740034e6b5dcd1f12ddd.png)
 
 - README.md で編集した部分の左側に青色 or 緑色の縦線が入る
 - サイドバーの「変更」の部分に README.md が追加される
@@ -22,13 +22,13 @@ VSCode を開き、ウィンドウにデスクトップのディレクトリ myd
 2. その上の入力欄に「README.md 更新」と書き入れて「コミット」ボタンを押す
 3. 「コミット」ボタンが「変更の同期 1↑」ボタンに切り替わるので、それも押す
 
-![](https://md.trap.jp/uploads/upload_d01cdf641b6400f5fde291249ad1d620.png)
+![](https://md.trap.jp/uploads/upload_3f6e6d08bf6ff02c34ee21cc4b1e9e4d.png)
 <p style="font-size: 12px; text-align: center; margin: -16px 0 20px 0">手順 2 の途中</p>
 
 :::info COMMIT_EDITMSG
 入力欄（コミットメッセージ）が空欄のまま「コミット」ボタンを押すと VSCode が英語が書かれた謎のファイルを表示して脅かして来ますが、単純に「入力欄が空欄だよ〜」と言われているだけです。開かれたファイルを閉じてコミットメッセージを書くことで問題なくコミットできます。
 
-![](https://md.trap.jp/uploads/upload_772ac859c1ca1ff326f58b8742d1056d.png)
+![](https://md.trap.jp/uploads/upload_b695d2874b17d74872c5d08de0bebf70.png)
 
 ちなみに、このファイルの 1 行目もコミットメッセージの入力欄として機能しています。コミットメッセージを書き込んでファイルを閉じると「コミット」ボタンを押したのと同じ扱いになります。
 :::
@@ -41,7 +41,7 @@ VSCode を開き、ウィンドウにデスクトップのディレクトリ myd
 
 今度はダウンロードディレクトリにある mydrive を開きます。本当はこれが別のデバイスからクラウドストレージにアクセスしているという想定です。
 
-![](https://md.trap.jp/uploads/upload_f2593de4a8caecf1165fdecf44192c5a.png)
+![](https://md.trap.jp/uploads/upload_32e50e69539a1b8f890a2bcae1be5aa8.png)
 
 VSCode で開いて少し待つと「コミット」ボタンが「変更の同期 1↓」ボタンに変化します。
 
@@ -51,7 +51,7 @@ VSCode で開いて少し待つと「コミット」ボタンが「変更の同�
 
 「変更の同期 1↓」ボタンを押すと README.md の内容が書き変わり、先ほど行った変更が同期されたことが確認できます。
 
-![](https://md.trap.jp/uploads/upload_5b4d921e64d6d1e8098ce89541ac15b9.png)
+![](https://md.trap.jp/uploads/upload_abd67dc27feefeff9b60fe81052d43f9.png)
 
 今回はリポジトリに元からただ一つ置かれていた README.md というテキストファイルの更新と同期を試しましたが、もちろん新しいファイルを同じ場所に置いて同期させることもできます。授業資料の PDF ファイルももちろん載せられます。
 
