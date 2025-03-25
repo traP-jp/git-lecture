@@ -54,3 +54,14 @@ $ git config --global init.defaultBranch main
 ```
 
 以上で Git の設定は終了です。
+
+:::warning Windows ユーザーの方へ
+
+プログラミング基礎講習会に従って環境構築を済ませていれば、Windows Terminal を開いたとき自動的に WSL2 環境に入るようになっています。この中で `code` コマンドを実行することで WSL2 モードの VSCode のウィンドウを開くことができます。たとえば、以下を実行することで WSL2 内のダウンロードディレクトリを WSL2 モードの VSCode で開くことができます（Windows ネイティブ環境のダウンロードディレクトリとは異なります）。
+
+```sh
+$ code ~/Downloads
+```
+
+Windows デバイスでこの講習会に参加される場合は、常に VSCode を WSL2 モードで開いていることを前提とします。WSL2 ではなく Windows ネイティブ環境で Git を活用するには、Windows ネイティブ環境側でも別途 Git の設定をする必要があります。
+:::
