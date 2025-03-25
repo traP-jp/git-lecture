@@ -3,7 +3,7 @@
 この講習会で必要になるソフトウェアは以下の通りです。
 
 - Visual Studio Code（以下 VSCode）
-- Git
+- Git（Windows なら WSL2 上のもの）
 
 VSCode がお使いのデバイスにインストールされていない方はプログラミング基礎講習会の [第 0 章](https://pg-basic.trap.show/text/chapter-0/) に従ってインストールと設定を済ませてから次に進んでください。
 
@@ -57,7 +57,7 @@ $ git config --global init.defaultBranch main
 
 :::warning Windows ユーザーの方へ
 
-プログラミング基礎講習会に従って環境構築を済ませていれば、Windows Terminal を開いたとき自動的に WSL2 環境に入るようになっています。この中で `code` コマンドを実行することで WSL2 モードの VSCode のウィンドウを開くことができます。たとえば、以下を実行することで WSL2 内のダウンロードディレクトリを WSL2 モードの VSCode で開くことができます（Windows ネイティブ環境のダウンロードディレクトリとは異なります）。
+プログラミング基礎講習会に従って環境構築を済ませていれば、Windows Terminal を開いたとき自動的に WSL2 環境に入るようになっています。この中で `code` コマンドを実行することで WSL2 モードの VSCode のウィンドウを開くことができます。たとえば、以下を実行することで WSL2 内のダウンロードディレクトリ（Windows ネイティブ環境のダウンロードディレクトリとは異なります）を WSL2 モードの VSCode で開くことができます。
 
 ```sh
 $ code ~/Downloads

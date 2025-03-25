@@ -101,14 +101,16 @@ API トークン（パスワード）など外部に悪用されないように�
     <td style="text-align: center"><strong>Unity</strong></td>
     <td style="text-align: center">UPM</td>
     <td style="text-align: center">Packages/manifest.json</td>
-    <td style="text-align: center">Packages/</td>
+    <td style="text-align: center">Library/</td>
   </tr>
 </table>
 
-Git リポジトリを開発に用いる場合、基本的に「**必要最低限のファイルを載せる**」のがよい使い方であるとされています。モジュールだけでなく、ビルドの中間ファイルや成果物など、リポジトリから復元可能なデータの保存場所は .gitignore に追加してリポジトリに含めない工夫がなされることが一般的です。
+Git リポジトリを開発に用いる場合、基本的に「**必要最低限のファイルを載せる**」のがよい使い方であるとされています。モジュールだけでなく、ビルドの中間ファイルや成果物など、リポジトリから復元可能なデータや一時的にしか使わないデータの保存場所は .gitignore に追加してリポジトリに含めない工夫がなされることが一般的です。
 
 :::tip .gitignore のテンプレート
 リポジトリの作成時に Gitea 側で .gitignore のテンプレートを含めるよう設定することもできます。作りたいシステムで使用するフレームワークごとに豊富なテンプレートが用意されています。
 
 ![](https://md.trap.jp/uploads/upload_66b56f43c0a0b3abfc352d07ece19a68.png)
+
+試しに Unity フレームワークを選択してリポジトリを作成すると、.gitignore には確かに `Library/` が含まれています。このディレクトリは環境ごとに復元が可能であるということです。
 :::
