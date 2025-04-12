@@ -13,34 +13,38 @@
 コミットメッセージやブランチ名の頭に決まった種類の接頭辞をつけることで、そのコミットやブランチの意図の分類を明確にすることが出来ます。たとえば以下がよく使われます。
 
 <table style="width: 100%; border-collapse: collapse;">
-  <tr>
-    <th style="width: auto; text-align: center">接頭辞</th>
-    <th style="width: 100%;">一般的な意味合い</th>
-  </tr>
-  <tr>
-    <td style="text-align: center"><strong>feat</strong></td>
-    <td>新機能の追加</td>
-  </tr>
+  <thead>
     <tr>
-    <td style="text-align: center"><strong>fix</strong></td>
-    <td>既存の機能の問題の修正</td>
-  </tr>
-  <tr>
-    <td style="text-align: center"><strong>style</strong></td>
-    <td>コードのスタイル変更やフォーマット</td>
-  </tr>
-  <tr>
-    <td style="text-align: center"><strong>docs</strong></td>
-    <td>ドキュメントの変更</td>
-  </tr>
-  <tr>
-    <td style="text-align: center"><strong>chore</strong></td>
-    <td>コードやドキュメントに影響しない作業</td>
-  </tr>
-  <tr>
-    <td style="text-align: center"><strong>refactor</strong></td>
-    <td>リファクタリング（コードの整頓）</td>
-  </tr>
+      <th style="width: auto; text-align: center">接頭辞</th>
+      <th style="width: 100%;">一般的な意味合い</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>feat</strong></td>
+      <td>新機能の追加</td>
+    </tr>
+      <tr>
+      <td style="text-align: center"><strong>fix</strong></td>
+      <td>既存の機能の問題の修正</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>style</strong></td>
+      <td>コードのスタイル変更やフォーマット</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>docs</strong></td>
+      <td>ドキュメントの変更</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>chore</strong></td>
+      <td>コードやドキュメントに影響しない作業</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>refactor</strong></td>
+      <td>リファクタリング（コードの整頓）</td>
+    </tr>
+  </tbody>
 </table>
 
 コミットメッセージに接頭辞をつける場合は `feat: コミットメッセージ` のように、ブランチ名に接頭辞をつける場合は `feat/リポジトリ名` のように書くことが一般的です。traQ フロントエンドリポジトリの [Branches](https://github.com/traPtitech/traQ_S-UI/branches/all) と [Commits](https://github.com/traPtitech/traQ_S-UI/commits/master/) で実例を確認してみましょう。

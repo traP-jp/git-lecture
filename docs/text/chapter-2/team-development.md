@@ -46,7 +46,7 @@ Gitea など多くのホスティングサービスは共同開発の効率化�
 
 ## .gitignore
 
-.gitignore は「**作業ディレクトリに載ってはいるが Git リポジトリに含めたくない**」ファイルやディレクトリのパスを記しておけるファイルです。Git リポジトリ内部で .gitignore がある場所を基準としたパスがその .gitignore に載っているファイルは Git リポジトリに含まれません。
+.gitignore は「**作業ディレクトリに載ってはいるが Git リポジトリに含めたくない**」ファイルやディレクトリのパスや拡張子を記しておけるファイルです。多くの場合 .gitignore ファイルはリポジトリのルートに一つだけ置かれ、その中にパスが記されたファイルやディレクトリは Git によるバーション管理を外れます。
 
 .gitignore は主に以下のような用途で用いられます。
 
@@ -56,61 +56,39 @@ Gitea など多くのホスティングサービスは共同開発の効率化�
 
 ![](https://md.trap.jp/uploads/upload_37df31b5612b2a7c87af06a9658a780f.png)
 
-開発中のシステムが参照する環境変数は作業ディレクトリの内部に .env というファイルを用意して書いておくと便利です。その上で、本番環境に予め設定してある環境変数と競合を生じないよう、.gitignore に .env を加えてリポジトリからは除外しておく運用が一般的です。
+開発中のシステムが参照する環境変数は作業ディレクトリの内部に .env のようなファイルを用意して書いておくと便利です。その上で、本番環境に予め設定してある環境変数と競合を生じないよう、.gitignore に .env を加えてリポジトリからは除外しておく運用が一般的です。
 
 :::info 環境変数と機密情報の秘匿
 traP Gitea 上のリポジトリは部員に対してのみ公開されますが、GitHub などのホスティングサービスを使う場合は Web 上に公開された Git リポジトリで開発を進めていくことも珍しくありません。それどころか、GitHub の無料会員は数年前までプライベートリポジトリを作ることが出来ませんでした。
 
-API トークン（パスワード）など外部に悪用されないように秘匿しておきたい文字列もよく環境変数として扱われます。実際に環境に依存するか否かはさておき、.gitignore の恩恵でリポジトリに含まれなくなった .env はこうした機密情報を置いておくにはうってつけの場所です。
+実行中のシステムが必要とする情報のうち、API トークン（パスワード）など外部に悪用されないように秘匿しておきたい文字列もよく環境変数として扱われます。実際に環境に依存するか否かはさておき、.gitignore の恩恵でリポジトリに含まれなくなった .env はこうした機密情報を置いておくにはうってつけの場所です。
 :::
 
 ### ライブラリやモジュールの除外
 
 多くのフレームワークでは Web 上からパッケージをインポートしてシステムに組み込むことが一般的です。そのため、パッケージのインポートと管理を担うパッケージマネージャと呼ばれるソフトウェアがフレームワークごとに提供されています。ちなみに、パッケージマネージャは Git 同様に代表的な CLI ソフトウェアの一種です。
 
-必要なパッケージを箇条書きで記したファイル（依存関係リストファイル）だけあれば、パッケージマネージャがそれを自動で読み取ってパッケージをインポートしてくれるので、パッケージの実体は Git リポジトリに載せておく必要がありません。これらを収めるディレクトリのパスを .gitignore に載せておくことで Git リポジトリを軽量化することができます。
+必要なパッケージを箇条書きで記したファイル（依存関係リストファイル）だけあれば、パッケージマネージャがそれを自動で読み取ってパッケージをインポートしてくれるので、パッケージの実体は Git リポジトリに載せておく必要がありません。これらを収めるディレクトリがリポジトリ内に作られる場合、パスを .gitignore に載せておくことで Git リポジトリを軽量化することができます。
 
-フレームワークごとの、パッケージマネージャ、依存関係リストファイルとパッケージディレクトリの著名な組み合わせの例を以下に示します。
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr>
-    <th style="width: auto; text-align: center">フレームワーク</th>
-    <th style="width: auto; text-align: center">パッケージマネージャ</th>
-    <th style="width: auto; text-align: center">依存関係リストファイル</th>
-    <th style="width: auto; text-align: center">パッケージディレクトリ</th>
-  </tr>
-  <tr>
-    <td style="text-align: center"><strong>Vite</strong></td>
-    <td style="text-align: center">npm</td>
-    <td style="text-align: center">package.json</td>
-    <td style="text-align: center">node_modules/</td>
-  </tr>
-  <tr>
-    <td style="text-align: center"><strong>Go</strong></td>
-    <td style="text-align: center">Go Modules</td>
-    <td style="text-align: center">go.mod</td>
-    <td style="text-align: center">$GOPATH/pkg/</td>
-  </tr>
-    <tr>
-    <td style="text-align: center"><strong>Python</strong></td>
-    <td style="text-align: center">pip</td>
-    <td style="text-align: center">requirements.txt</td>
-    <td style="text-align: center">仮想環境の内部</td>
-  </tr>
-  <tr>
-    <td style="text-align: center"><strong>Unity</strong></td>
-    <td style="text-align: center">UPM</td>
-    <td style="text-align: center">Packages/manifest.json</td>
-    <td style="text-align: center">Library/</td>
-  </tr>
-</table>
+### その他の不要なファイルの除外
 
-Git リポジトリを開発に用いる場合、基本的に「**必要最低限のファイルを載せる**」のがよい使い方であるとされています。モジュールだけでなく、ビルドの中間ファイルや成果物など、リポジトリから復元可能なデータや一時的にしか使わないデータの保存場所は .gitignore に追加してリポジトリに含めない工夫がなされることが一般的です。
+Git リポジトリを開発に用いる場合、基本的に「**必要最低限のファイルを載せる**」のがよい使い方であるとされています。モジュールだけでなく、ビルドの中間ファイルや生成物など、リポジトリから復元可能なデータや一時的にしか使わないデータの形式や保存場所は .gitignore に追加してリポジトリに含めない工夫がなされることが一般的です。
 
-:::tip .gitignore のテンプレート
+:::tip .gitignore の実例とテンプレート
+traQ フロントエンドリポジトリのルートに置かれている [.gitignore ファイル](https://github.com/traPtitech/traQ_S-UI/blob/master/.gitignore) を例として見てみます。
+
+![](https://md.trap.jp/uploads/upload_c6f36e1ffb29011a1916357da80e14fb.png)
+
+実は、写っている最初の 6 行にこれまでに挙げた 3 つの .gitignore の用途が全て含まれています。Vite フレームワークによる Web 開発の実例として専門用語を交えて軽く紹介しますが、あまり深入りせず「そういうもの」程度に読んでいただければ大丈夫です。
+
+- 6 行目の `.env.local` は **環境変数を書いておくファイル** です。先ほど「.env は一般に Git リポジトリに含めない」と書きましたが、紛らわしくも運用によっては .env が『環境に依存しない定数』を書く場所として用いられリポジトリに含まれることがあるので、本来の .env の役割である『環境依存』というニュアンスを強めてこのようなファイル名が用いられたりします。
+
+- 2 行目 の `node_modules` は **モジュールがインポートされるディレクトリ** です。リポジトリのルートに見つかる package.json というファイルに必要なモジュールが全て列挙されているので、npm というパッケージマネージャがあれば自動でこのディレクトリの中身を再現できます。
+
+- 3 行目の `/dist` は **ビルド成果物を保存するディレクトリ** です。[リポジトリ](/text/chapter-2/repository.html#共同開発とブランチ) の章で「フロントエンドは HTML + CSS + JavaScript で出来ている」ことに軽く触れましたが、ビルドされた HTML + CSS + JavaScript のシステムが収められる場所がこの dist です。
+
 リポジトリの作成時に Gitea 側で .gitignore のテンプレートを含めるよう設定することもできます。作りたいシステムで使用するフレームワークごとに豊富なテンプレートが用意されています。
 
 ![](https://md.trap.jp/uploads/upload_66b56f43c0a0b3abfc352d07ece19a68.png)
-
-試しに Unity フレームワークを選択してリポジトリを作成すると、.gitignore には確かに `Library/` が含まれています。このディレクトリは環境ごとに復元が可能であるということです。
 :::

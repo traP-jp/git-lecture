@@ -59,7 +59,7 @@ export default defineConfig({
       },
       {
         text: '補足',
-        link: '/text/chapter-3/',
+        // link: '/text/chapter-3/',
         items: [{ text: '認証済みコミット', link: '/text/chapter-3/verified' }]
       },
       {

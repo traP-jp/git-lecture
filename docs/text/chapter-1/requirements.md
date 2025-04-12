@@ -21,7 +21,7 @@ $ git --version
 git version 2.39.5 (Apple Git-154)
 ```
 
-もしデバイスに Git が入っているという確証が持てなければ、TA を呼んでください。
+もしデバイスに Git が入っているという確信が持てなければ、TA を呼んでください。
 
 :::warning コマンド入力の注意
 最初の `$` はターミナルにもとから表示されている記号と同じものです。コマンドを実行する際は**それに続く部分のみを入力**するようにしてください。また、コマンド例に `{ユーザー名}` のように `{}` で括られた記述が登場したら、必ず**全体をあなた自身の情報に置き換えて**ください。
@@ -30,7 +30,7 @@ git version 2.39.5 (Apple Git-154)
 $ git config --global user.name {ユーザー名}
 ```
 
-たとえば上記のコマンド例を実行するときは `git config --global user.name kitsne241` のように入力して Enter を押してください。
+たとえば上記のコマンド例を実行するときは `git config --global user.name kitsne` のように入力して Enter を押してください。
 
 また、`#` から始まる行は**単なる補足なので無視**してください。
 :::
@@ -65,3 +65,13 @@ $ code ~/Downloads
 
 Windows デバイスでこの講習会に参加される場合は、常に VSCode を WSL2 モードで開いていることを前提とします。WSL2 ではなく Windows ネイティブ環境で Git を活用するには、Windows ネイティブ環境側でも別途 Git の設定をする必要があります。
 :::
+
+## VSCode の設定
+
+VSCode に一つだけ設定を加えます。VSCode を開いた状態で、Mac の場合は `Command` + `,`、Windows の場合は `Ctrl` + `,` を同時押しして設定を開きます。
+
+開けたら、設定の検索欄に "autofetch" と入力して "Git: Autofetch" 設定を見つけてください。デフォルトでは `false` になっていますが、これを `true` に切り替えてください。
+
+![](https://md.trap.jp/uploads/upload_548a7000d4128b08a7a36fcd1efec2ac.png)
+
+以上で VSCode の設定は終了です。
