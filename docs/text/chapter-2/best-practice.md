@@ -24,9 +24,13 @@
       <td style="text-align: center"><strong>feat</strong></td>
       <td>新機能の追加</td>
     </tr>
-      <tr>
+    <tr>
       <td style="text-align: center"><strong>fix</strong></td>
-      <td>既存の機能の問題の修正</td>
+      <td>既存の機能の問題修正</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>hotfix</strong></td>
+      <td>緊急の問題修正</td>
     </tr>
     <tr>
       <td style="text-align: center"><strong>style</strong></td>
