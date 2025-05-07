@@ -8,11 +8,7 @@ Git リポジトリを閲覧・編集する権限があることを証明する�
 
 このサービスの役割については後ほど触れますが、簡単に説明しておくと「Git リポジトリの保管庫」です。類似サービスとしては GitHub や GitLab が有名ですが、この Gitea のサーバーは traP が管理しています。
 
-:::tip traP の 2 種類の Gitea
-[git-lecture.trap.jp](https://git-lecture.trap.jp/) の Gitea は、traP の普段使いの Gitea（[git.trap.jp](https://git.trap.jp/)）とは別でこの Git 講習会の期間のみ運用されています。この資料をあとから追っている場合は前者（[git-lecture.trap.jp](https://git-lecture.trap.jp/)）が使えないことがあるので、代わりに後者（[git.trap.jp](https://git.trap.jp/)）をお使いください。
-:::
-
-[git-lecture.trap.jp](https://git-lecture.trap.jp/) にアクセスしたら、右上のボタンからログインしておきましょう。
+[git.trap.jp](https://git.trap.jp/) にアクセスしたら、右上のボタンからログインしておきましょう。
 
 ## SSH キーの生成
 
@@ -53,7 +49,7 @@ $ cat ~/.ssh/id_ed25519.pub
 
 ## Gitea に SSH キーを登録する
 
-[SSH / GPGキー - traP Git](https://git-lecture.trap.jp/user/settings/keys) にアクセスし、「キーを追加」をクリックします。
+[SSH / GPGキー - traP Git](https://git.trap.jp/user/settings/keys) にアクセスし、「キーを追加」をクリックします。
 
 「内容」の欄に先ほどコピーした公開鍵をペーストしてください。SSH キーはデバイスに保存されるので、複数のデバイスをお使いの場合は今操作中のデバイスを特定できるような「キー名」を付けておくことをお勧めします。
 

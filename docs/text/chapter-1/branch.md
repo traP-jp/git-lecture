@@ -41,7 +41,7 @@ Gitea は「**Git リポジトリのホスティングサービス**」です。
 :::tip Gitea を使って Gitea を立てる
 Gitea とは GitHub や GitLab などと同じホスティングサービスである、という説明はあながち間違いではないのですが、誤解を生みかねないのでここで 2 つの Gitea を区別してご説明します。
 
-[Gitea](https://about.gitea.com/) は GitHub や GitLab と同様のホスティングサービスを自分たちでサーバーを立てて運用するために活用できるオープンソースソフトウェア（OSS）です。traP でも Gitea を利用してサークルが管理するサーバーにホスティングサービス [git-lecture.trap.jp](https://git-lecture.trap.jp) や [git.trap.jp](https://git.trap.jp) を立ち上げ、そしてそれらをそのまま Gitea と呼んでいます。このテキストのここ以外で登場する Gitea は全て後者です。
+[Gitea](https://about.gitea.com/) は GitHub や GitLab と同様のホスティングサービスを自分たちでサーバーを立てて運用するために活用できるオープンソースソフトウェア（OSS）です。traP でも Gitea を利用してサークルが管理するサーバーにホスティングサービス [git.trap.jp](https://git.trap.jp) を立ち上げ、それをそのまま Gitea と呼んでいます。このテキストのここ以外で登場する Gitea は全て後者です。
 :::
 
 GitHub と Gitea は同じ役割を与えられたサービスであるだけに、Web ページの見た目や構造も瓜二つです。強いて言えば GitHub は日本語に対応していないのですが、Gitea を使いこなせるようになれば GitHub の基本的な使い方もある程度は類推できるはずです。
