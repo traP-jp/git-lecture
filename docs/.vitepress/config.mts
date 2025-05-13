@@ -45,22 +45,18 @@ export default defineConfig({
           { text: 'リポジトリ', link: '/text/chapter-2/repository' },
           { text: 'ブランチを生やす', link: '/text/chapter-2/grow-a-branch' },
           { text: 'プルリクエストのマージ', link: '/text/chapter-2/merge' },
-          { text: '共同開発の基本', link: '/text/chapter-2/team-development' },
-          {
-            text: '発展',
-            collapsed: false,
-            items: [
-              { text: 'コンフリクトの解決', link: '/text/chapter-2/conflict' },
-              { text: 'マージのしくみ', link: '/text/chapter-2/how-merging-works' },
-              { text: '共同開発のすすめ', link: '/text/chapter-2/best-practice' }
-            ]
-          }
+          { text: '共同開発の基本', link: '/text/chapter-2/team-development' }
         ]
       },
       {
-        text: '補足',
-        // link: '/text/chapter-3/',
-        items: [{ text: '認証済みコミット', link: '/text/chapter-3/verified' }]
+        text: '発展',
+        link: '/text/chapter-3/',
+        items: [
+          { text: '認証済みコミット', link: '/text/chapter-3/verified' },
+          { text: 'コンフリクトの解決', link: '/text/chapter-3/conflict' },
+          { text: 'マージのしくみ', link: '/text/chapter-3/how-merging-works' },
+          { text: '共同開発のすすめ', link: '/text/chapter-3/best-practice' }
+        ]
       },
       {
         text: 'あとがき',
