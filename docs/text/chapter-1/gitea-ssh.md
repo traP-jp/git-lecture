@@ -15,7 +15,7 @@ Git リポジトリを閲覧・編集する権限があることを証明する�
 ターミナルを開き、以下を実行します。
 
 ```sh
-$ ssh-keygen -t ed25519 -C {メールアドレス}
+ssh-keygen -t ed25519 -C メールアドレス
 ```
 
 キーのファイルを作成する場所を聞かれますが、キーを登録したことがない場合はデフォルトでよいので何も入力せず Enter を押します。
@@ -44,7 +44,7 @@ Enter same passphrase again:
 以上で SSH キーが生成できました。以下のコマンドで公開鍵を出力し、コピーしてください。
 
 ```sh
-$ cat ~/.ssh/id_ed25519.pub
+cat ~/.ssh/id_ed25519.pub
 ```
 
 ## Gitea に SSH キーを登録する
@@ -62,7 +62,7 @@ $ cat ~/.ssh/id_ed25519.pub
 以下のコマンドを実行してください。`yes/no/[fingerprint]` は `yes` を選択してください。
 
 ```sh
-$ ssh -T ssh://git@git.trap.jp:2200
+ssh -T ssh://git@git.trap.jp:2200
 ```
 
 以下のように表示されたら、Gitea との SSH 接続に成功しています。

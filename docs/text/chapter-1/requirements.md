@@ -12,7 +12,7 @@ VSCode がお使いのデバイスにインストールされていない方は�
 ターミナル（Windows の場合は Windows Terminal）を開いて以下を実行してください。
 
 ```sh
-$ git --version
+git --version
 ```
 
 お使いのデバイスに Git がインストールされているならば、たとえば以下のように Git のバージョンを表す文字列が表示されます。
@@ -24,10 +24,10 @@ git version 2.39.5 (Apple Git-154)
 もしデバイスに Git が入っているという確信が持てなければ、TA を呼んでください。
 
 :::warning コマンド入力の注意
-最初の `$` はターミナルにもとから表示されている記号と同じものです。コマンドを実行する際は**それに続く部分のみを入力**するようにしてください。また、コマンド例に `{ユーザー名}` のように `{}` で括られた記述が登場したら、必ず**全体をあなた自身の情報に置き換えて**ください。
+コマンド例に『ユーザー名』や『メールアドレス』などのように日本語の記述が登場したら、必ず**全体をあなた自身の情報に置き換えて**ください。
 
 ```sh
-$ git config --global user.name {ユーザー名}
+git config --global user.name ユーザー名
 ```
 
 たとえば上記のコマンド例を実行するときは `git config --global user.name kitsne` のように入力して Enter を押してください。
@@ -41,16 +41,16 @@ $ git config --global user.name {ユーザー名}
 
 ```sh
 # ユーザー名の設定。traP か GitHub の ID がおすすめ
-$ git config --global user.name {ユーザー名}
+git config --global user.name ユーザー名
 
 # メールアドレスの設定。既に GitHub のアカウントを持っていれば同じものにしてください
-$ git config --global user.email {メールアドレス}
+git config --global user.email メールアドレス
 
 # コミットメッセージを VScode で書けるようにする設定
-$ git config --global core.editor 'code --wait'
+git config --global core.editor 'code --wait'
 
 # デフォルトのブランチを master から main に変更。GitHub や Gitea に合わせます
-$ git config --global init.defaultBranch main
+git config --global init.defaultBranch main
 ```
 
 以上で Git の設定は終了です。
@@ -60,7 +60,7 @@ $ git config --global init.defaultBranch main
 プログラミング基礎講習会に従って環境構築を済ませていれば、Windows Terminal を開いたとき自動的に WSL2 環境に入るようになっています。この中で `code` コマンドを実行することで WSL2 モードの VSCode のウィンドウを開くことができます。たとえば、以下を実行することで WSL2 内のダウンロードディレクトリ（Windows ネイティブ環境のダウンロードディレクトリとは異なります）を WSL2 モードの VSCode で開くことができます。
 
 ```sh
-$ code ~/Downloads
+code ~/Downloads
 ```
 
 Windows デバイスでこの講習会に参加される場合は、常に VSCode を WSL2 モードで開いていることを前提とします。WSL2 ではなく Windows ネイティブ環境で Git を活用するには、Windows ネイティブ環境側でも別途 Git の設定をする必要があります。
