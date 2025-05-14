@@ -41,7 +41,7 @@ Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 ```
 
-以上で SSH キーが生成できました。以下のコマンドで公開鍵を出力し、コピーしてください。
+以上で SSH キーが生成できました。以下のコマンドで公開鍵を表示し、コピーしてください。
 
 ```sh
 cat ~/.ssh/id_ed25519.pub
@@ -49,13 +49,13 @@ cat ~/.ssh/id_ed25519.pub
 
 ## Gitea に SSH キーを登録する
 
-[SSH / GPGキー - traP Git](https://git.trap.jp/user/settings/keys) にアクセスし、「キーを追加」をクリックします。
+[SSH / GPGキー - traP Git](https://git.trap.jp/user/settings/keys) にアクセスし、「SSH キーの管理」の右にある「キーを追加」ボタンをクリックすると、以下のような入力欄が出現します。
 
 「内容」の欄に先ほどコピーした公開鍵をペーストしてください。SSH キーはデバイスに保存されるので、複数のデバイスをお使いの場合は今操作中のデバイスを特定できるような「キー名」を付けておくことをお勧めします。
 
-![](https://md.trap.jp/uploads/upload_b6b7cca28a313b327d6026693a3662b5.png)
+![](https://md.trap.jp/uploads/upload_8996c3b254e647f7fcc4bc7c8297e546.png)
 
-「キーを追加」を押すことで登録が完了します。
+「内容」欄の下にある「キーを追加」ボタンを押すことで登録が完了します。
 
 ## 接続の確認
 

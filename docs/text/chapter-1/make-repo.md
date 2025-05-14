@@ -27,15 +27,21 @@ Gitea のページから [新しいリポジトリを作成](https://git.trap.jp
 
 ![](https://md.trap.jp/uploads/upload_56c165c7bbf7b3894e1f42d953dad939.png)
 
-リポジトリが作成されるとこんな画面に飛びます。
+リポジトリが作成されると以下のような画面に遷移します。
 
-![](https://md.trap.jp/uploads/upload_b792362e59da0e3b0632dd4c8d1f022d.png)
+![](https://md.trap.jp/uploads/upload_8998ee308cd12e4cec0984e09ce3c26c.png)
 
-橙色の丸で囲ったボタンをクリックして以下の文字列を入手します。よく目にする `https://` から始まる URL と異なり、SSH プロトコルによる暗号化がなされています。Web 上のリポジトリの在処を示す文字列であるという点は同じです。
+Code と書かれた青いボタンをクリックして、以下のように選択してください。
+
+![](https://md.trap.jp/uploads/upload_368aa3097d8929cec234113df297f47e.png)
+
+四角が 2 つ重なったマークのボタンをクリックすることで、自動的に以下のような文字列がコピーされます。
 
 ```txt
-ssh://git@git.trap.jp:2200/{ユーザー名}/mydrive.git
+ssh://git@git.trap.jp:2200/ユーザー名/mydrive.git
 ```
+
+この文字列は Web 上のリポジトリの場所を表す URL の一種なのですが、よく目にする `https://` から始まるものと異なり、データを SSH プロトコルというもので暗号化した上でやりとりするための形式になっています。
 
 ## リポジトリのクローン
 

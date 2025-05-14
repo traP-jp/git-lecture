@@ -41,7 +41,7 @@ code ~/Desktop/mydrive
 
 ここまで終わったら、Gitea のリポジトリのページに飛んでみます。リロードすると先ほどの更新が反映されていることが確認できます。
 
-![](https://md.trap.jp/uploads/upload_ea783a5e23ba7064f550bb085c432a0c.png)
+![](https://md.trap.jp/uploads/upload_87cc42f0fb8105190a1ec3fc6e9d3556.png)
 
 ## リポジトリの同期
 
