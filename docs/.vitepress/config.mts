@@ -27,6 +27,7 @@ export default defineConfig({
             text: '事前準備',
             collapsed: false,
             items: [
+              { text: 'シェルコマンド', link: '/text/chapter-1/shell-commands' },
               { text: '必要なツール', link: '/text/chapter-1/requirements' },
               { text: 'SSH キーの登録', link: '/text/chapter-1/gitea-ssh' }
             ]

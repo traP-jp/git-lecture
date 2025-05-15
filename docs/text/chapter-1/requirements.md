@@ -9,7 +9,7 @@ VSCode がお使いのデバイスにインストールされていない方は�
 
 ## Git が入っていることの確認
 
-ターミナル（Windows の場合は Windows Terminal）を開いて以下を実行してください。
+ターミナルを開いて以下を実行してください。
 
 ```sh
 git --version
@@ -55,15 +55,12 @@ git config --global init.defaultBranch main
 
 以上で Git の設定は終了です。
 
-:::warning Windows ユーザーの方へ
+:::tip Windows の環境の使い分け
+Windows の方はプログラミング基礎講習会にて WSL2 という環境を構築する操作を行いました。この環境は Windows ネイティブ環境と異なり、UNIX 系と呼ばれる Mac や Linux と同類の環境です。
 
-プログラミング基礎講習会に従って環境構築を済ませていれば、Windows Terminal を開いたとき自動的に WSL2 環境に入るようになっています。この中で `code` コマンドを実行することで WSL2 モードの VSCode のウィンドウを開くことができます。たとえば、以下を実行することで WSL2 内のダウンロードディレクトリ（Windows ネイティブ環境のダウンロードディレクトリとは異なります）を WSL2 モードの VSCode で開くことができます。
+諸般の事情から、**Web 開発をするには WSL2 環境、Unity などを用いたゲーム開発には Windows ネイティブ環境**が適しているとされています。WSL2 ではなく Windows ネイティブ環境で Git を活用するには、Windows ネイティブ環境側でも別途 Git の設定をする必要があります。
 
-```sh
-code ~/Downloads
-```
-
-Windows デバイスでこの講習会に参加される場合は、常に VSCode を WSL2 モードで開いていることを前提とします。WSL2 ではなく Windows ネイティブ環境で Git を活用するには、Windows ネイティブ環境側でも別途 Git の設定をする必要があります。
+この講習会では、Windows デバイスなら WSL2 上で Git を扱います。
 :::
 
 ## VSCode の設定
