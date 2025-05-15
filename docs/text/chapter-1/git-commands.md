@@ -74,21 +74,21 @@
       <td style="text-align: center"><strong>clone</strong></td>
     </tr>
     <tr>
-      <td>デスクトップの mydrive で README.md を編集して「コミット」ボタンを押す</td>
+      <td>Desktop の mydrive で README.md を編集して「コミット」ボタンを押す</td>
       <td style="text-align: center"><strong>commit</strong></td>
     </tr>
     <tr>
-      <td>デスクトップの mydrive で「変更を同期 ↑1」ボタンを押す</td>
+      <td>Desktop の mydrive で「変更を同期 ↑1」ボタンを押す</td>
       <td style="text-align: center"><strong>push</strong></td>
     </tr>
     <tr>
-      <td>ダウンロードの mydrive で「変更の同期 ↓1」ボタンを押す</td>
+      <td>Downloads の mydrive で「変更の同期 ↓1」ボタンを押す</td>
       <td style="text-align: center"><strong>merge</strong></td>
     </tr>
   </tbody>
 </table>
 
-この表には fetch が含まれていませんが、[必要なツール](/text/chapter-1/requirements.html#vscode-の設定) の章で Autofetch 設定を `true` にしたことで作業ブランチへの fetch 操作が 180 秒おきに自動で行われるようになっています。[コミットと同期](/text/chapter-1/commit-and-sync.html#リポジトリの同期) の章でダウンロードの mydrive を開いてすぐ「コミット」ボタンが勝手に「変更の同期 1↓」ボタンに変化したのは、この Autofetch が働いたからです。
+この表には fetch が含まれていませんが、[必要なツール](/text/chapter-1/requirements.html#vscode-の設定) の章で Autofetch 設定を `true` にしたことで作業ブランチへの fetch 操作が 180 秒おきに自動で行われるようになっています。[コミットと同期](/text/chapter-1/commit-and-sync.html#リポジトリの同期) の章で Downloads の mydrive を開いてすぐ「コミット」ボタンが勝手に「変更の同期 1↓」ボタンに変化したのは、この Autofetch が働いたからです。
 
 :::info コミット ≠ ファイルの編集
 commit の説明として「作業ブランチに変更を加えること」と書きましたが、上記の対応から分かるように、ただ単に作業ディレクトリのファイルの内容を編集するだけでは commit にはなりません。ファイルの変更をステージし、明示的にコミットして初めてブランチが伸びます。

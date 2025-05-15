@@ -4,7 +4,7 @@
 
 ## ブランチの作成
 
-デスクトップの mydrive ディレクトリを VSCode で開き、ウィンドウ左下の「main」と書かれた部分をクリックすると、ウィンドウ上部中央に入力欄とボタンが現れます。
+Desktop の mydrive ディレクトリを VSCode で開き、ウィンドウ左下の「main」と書かれた部分をクリックすると、ウィンドウ上部中央に入力欄とボタンが現れます。
 
 ![](https://md.trap.jp/uploads/upload_99e226372e23f4e7d72dc05008def3e1.png)
 

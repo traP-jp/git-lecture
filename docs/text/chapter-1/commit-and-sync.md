@@ -4,7 +4,7 @@
 
 ## リポジトリの更新
 
-以下のコマンドを実行して VSCode でデスクトップの mydrive を開いてください。
+以下のコマンドを実行して VSCode で Desktop の mydrive を開いてください。
 
 ```sh
 code ~/Desktop/mydrive
@@ -45,14 +45,14 @@ code ~/Desktop/mydrive
 
 ## リポジトリの同期
 
-今度はダウンロードディレクトリにある mydrive を開きます。本当はこれが別のデバイスからクラウドストレージにアクセスしているという想定です。
+今度は Downloads ディレクトリにある mydrive を開きます。本当はこれが別のデバイスからクラウドストレージにアクセスしているという想定です。
 
 ![](https://md.trap.jp/uploads/upload_32e50e69539a1b8f890a2bcae1be5aa8.png)
 
 VSCode で開いて少し待つと「コミット」ボタンが「変更の同期 1↓」ボタンに変化します。
 
 :::tip 同期の方向
-先ほどと違うのは矢印が上ではなく下を向いている点です。これは先ほどの同期が「デスクトップの mydrive → Gitea 上の mydrive」だったのに対し、今回の同期が「Gitea 上の mydrive → ダウンロードの mydrive」であることを表しています。
+先ほどと違うのは矢印が上ではなく下を向いている点です。これは先ほどの同期が「Desktop の mydrive → Gitea 上の mydrive」だったのに対し、今回の同期が「Gitea 上の mydrive → Downloads の mydrive」であることを表しています。
 :::
 
 「変更の同期 1↓」ボタンを押すと README.md の内容が書き変わり、先ほど行った変更が同期されたことが確認できます。

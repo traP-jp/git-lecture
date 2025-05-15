@@ -14,7 +14,7 @@ mydrive リポジトリで main ブランチから sub ブランチを生やし�
 
 ## ローカル環境間の同期競合
 
-デスクトップディレクトリとダウンロードディレクトリの mydrive がともに main ブランチにいるとします。デスクトップ の mydrive で README.md を変更してコミットしたのち、ダウンロードの mydrive で「変更を同期」する前に README.md を変更してコミット、その後「変更を同期」しようとするとコンフリクトが生じます。
+Desktop ディレクトリと Downloads ディレクトリの mydrive がともに main ブランチにいるとします。Desktop の mydrive で README.md を変更してコミットしたのち、Downloads の mydrive で「変更を同期」する前に README.md を変更してコミット、その後「変更を同期」しようとするとコンフリクトが生じます。
 
 コンフリクトが発覚するのは VSCode 上で「変更の同期」ボタンを押した瞬間です。
 
