@@ -22,4 +22,4 @@ Git は traP におけるゲームやサービスの共同開発では欠かせ�
 
 ---
 
-[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**会場に来た！**』にスタンプをつけよう！
+[#event/workshop/git/exercise](https://q.trap.jp/channels/event/workshop/git/exercise) の『**会場に来た！**』にスタンプをつけよう！

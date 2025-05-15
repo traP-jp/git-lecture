@@ -119,4 +119,4 @@ VSCode のスタートページの中央左あたりに『Git リポジトリの
 
 ---
 
-[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**リポジトリの作成 まで**』にスタンプをつけよう！
+[#event/workshop/git/exercise](https://q.trap.jp/channels/event/workshop/git/exercise) の『**リポジトリの作成 まで**』にスタンプをつけよう！

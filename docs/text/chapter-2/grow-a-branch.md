@@ -30,4 +30,4 @@ VSCode に戻ると、先ほどクリックした部分の「main」が「sub」
 
 ---
 
-[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**ブランチを生やす まで**』にスタンプをつけよう！
+[#event/workshop/git/exercise](https://q.trap.jp/channels/event/workshop/git/exercise) の『**ブランチを生やす まで**』にスタンプをつけよう！

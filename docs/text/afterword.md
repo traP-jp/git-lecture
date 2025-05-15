@@ -26,4 +26,4 @@ Git は「開発したいもののパーツ」ではなく「開発するため�
 
 ---
 
-[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**完走**』にスタンプをつけよう！
+[#event/workshop/git/exercise](https://q.trap.jp/channels/event/workshop/git/exercise) の『**完走**』にスタンプをつけよう！

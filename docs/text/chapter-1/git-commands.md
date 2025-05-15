@@ -104,4 +104,4 @@ commit の説明として「作業ブランチに変更を加えること」と�
 
 ---
 
-[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**前編完走**』にスタンプをつけよう！
+[#event/workshop/git/exercise](https://q.trap.jp/channels/event/workshop/git/exercise) の『**前編完走**』にスタンプをつけよう！

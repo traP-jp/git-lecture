@@ -75,4 +75,4 @@ VSCode に一つだけ設定を加えます。VSCode を開いた状態で、Mac
 
 ---
 
-[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**必要なツール まで**』にスタンプをつけよう！
+[#event/workshop/git/exercise](https://q.trap.jp/channels/event/workshop/git/exercise) の『**必要なツール まで**』にスタンプをつけよう！

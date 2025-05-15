@@ -82,4 +82,4 @@ Git と Gitea を使ってクラウドストレージを作ることができま
 
 ---
 
-[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**コミットと同期 まで**』にスタンプをつけよう！
+[#event/workshop/git/exercise](https://q.trap.jp/channels/event/workshop/git/exercise) の『**コミットと同期 まで**』にスタンプをつけよう！

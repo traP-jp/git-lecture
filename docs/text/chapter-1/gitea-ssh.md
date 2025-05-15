@@ -76,4 +76,4 @@ If this is unexpected, please log in with password and setup Gitea under another
 
 ---
 
-[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**SSH キーの登録 まで**』にスタンプをつけよう！
+[#event/workshop/git/exercise](https://q.trap.jp/channels/event/workshop/git/exercise) の『**SSH キーの登録 まで**』にスタンプをつけよう！

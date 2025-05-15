@@ -41,4 +41,4 @@ sub ブランチの README.md に変更を加えます。ちょっと書き足�
 
 ---
 
-[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**プルリクエストのマージ まで**』にスタンプをつけよう！
+[#event/workshop/git/exercise](https://q.trap.jp/channels/event/workshop/git/exercise) の『**プルリクエストのマージ まで**』にスタンプをつけよう！
