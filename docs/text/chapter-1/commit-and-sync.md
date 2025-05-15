@@ -4,10 +4,12 @@
 
 ## リポジトリの更新
 
-以下のコマンドを実行して VSCode で Desktop の mydrive を開いてください。
+ディレクトリを VSCode で開くには `code` コマンドを用います。ターミナルで以下のコマンドを **1 行ずつ** 実行していくと、3 行目の実行によって VSCode が起動し、Desktop の mydrive が開かれます。
 
 ```sh
-code ~/Desktop/mydrive
+cd ~
+cd Desktop
+code mydrive
 ```
 
 ウェルカムページが表示されたら閉じ、エディタでは README.md を開いておきます。また、ウィンドウ左のアクティビティバーからソース管理タブ（○ が 3 つ曲線で繋がれた図形）を開き、以下のような画面にしてください。
@@ -45,7 +47,22 @@ code ~/Desktop/mydrive
 
 ## リポジトリの同期
 
-今度は Downloads ディレクトリにある mydrive を開きます。本当はこれが別のデバイスからクラウドストレージにアクセスしているという想定です。
+今度は Downloads ディレクトリにある mydrive を VSCode の別のウィンドウで開きます。以下のコマンドを 1 行ずつ実行してください。
+
+```sh
+cd ~
+cd Downloads
+code mydrive
+```
+
+:::tip 同じ働きのコマンド
+ちなみに、上の 3 行のコマンドと同じことを以下の 1 行で実行することもできます。
+```sh
+code ~/Downloads/mydrive
+```
+:::
+
+今回、2 つの mydrive は同一の環境に存在しますが、本当はそれぞれ別のデバイスにリポジトリをクローンしてクラウドストレージにアクセスしているという想定です。
 
 ![](https://md.trap.jp/uploads/upload_32e50e69539a1b8f890a2bcae1be5aa8.png)
 
