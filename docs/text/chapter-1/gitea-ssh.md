@@ -73,3 +73,7 @@ If this is unexpected, please log in with password and setup Gitea under another
 ```
 
 以上で SSH キーの設定は終了です。
+
+---
+
+[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**SSH キーの登録 まで**』にスタンプをつけよう！

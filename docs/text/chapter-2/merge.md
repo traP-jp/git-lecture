@@ -38,3 +38,7 @@ sub ブランチの README.md に変更を加えます。ちょっと書き足�
 
 ![](https://md.trap.jp/uploads/upload_86c55ea931d1a34eba863d63260cb419.png)
 <p style="font-size: 12px; text-align: center; margin: -16px 0 20px 0">ここまでやってきたことの図解</p>
+
+---
+
+[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**プルリクエストのマージ まで**』にスタンプをつけよう！

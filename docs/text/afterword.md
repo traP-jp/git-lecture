@@ -23,3 +23,7 @@ Git は「開発したいもののパーツ」ではなく「開発するため�
 <div style="text-align: right;">
 2025年度 テキスト執筆 きつね
 </div>
+
+---
+
+[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**完走**』にスタンプをつけよう！

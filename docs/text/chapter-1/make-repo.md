@@ -116,3 +116,7 @@ VSCode のスタートページの中央左あたりに『Git リポジトリの
 :::
 
 再度、`cd` と `ls` を駆使して Desktop と Downloads のそれぞれに mydrive ディレクトリが存在することを確認してください。確認できたら次に進んでください。
+
+---
+
+[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**リポジトリの作成 まで**』にスタンプをつけよう！

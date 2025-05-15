@@ -19,3 +19,7 @@ Git は traP におけるゲームやサービスの共同開発では欠かせ�
 <div style="text-align: right;">
 東京科学大学デジタル創作同好会 2025年4月
 </div>
+
+---
+
+[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**会場に来た！**』にスタンプをつけよう！

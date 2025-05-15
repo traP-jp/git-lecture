@@ -72,3 +72,7 @@ VSCode に一つだけ設定を加えます。VSCode を開いた状態で、Mac
 ![](https://md.trap.jp/uploads/upload_548a7000d4128b08a7a36fcd1efec2ac.png)
 
 以上で VSCode の設定は終了です。
+
+---
+
+[進捗報告 ch](https://q.trap.jp/channels/event/workshop/git/exercise) の『**必要なツール まで**』にスタンプをつけよう！
