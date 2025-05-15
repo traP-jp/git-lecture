@@ -70,7 +70,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>コマンド <code>git clone {リポジトリの URL}</code> の実行</td>
+      <td>コマンド <code>git clone ssh://文字列</code> の実行</td>
       <td style="text-align: center"><strong>clone</strong></td>
     </tr>
     <tr>
