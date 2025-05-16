@@ -6,7 +6,7 @@ export default defineConfig({
   description: 'traPで行われたGit講習会で使うためのテキストです',
   markdown: {
     theme: {
-      light: 'github-dark',
+      light: 'github-light',
       dark: 'github-dark'
     },
     math: true
