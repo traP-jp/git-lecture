@@ -31,7 +31,7 @@ Gitea のページから [新しいリポジトリを作成](https://git.trap.jp
 
 ![](https://md.trap.jp/uploads/upload_8998ee308cd12e4cec0984e09ce3c26c.png)
 
-Code と書かれた青いボタンをクリックして、以下のように選択してください。
+Code と書かれた青いボタンをクリックして、以下のように選択してください。HTTPS タブが開かれている場合は、その右隣の SSH タブを開いてください。
 
 ![](https://md.trap.jp/uploads/upload_368aa3097d8929cec234113df297f47e.png)
 
