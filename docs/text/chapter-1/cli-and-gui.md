@@ -37,7 +37,7 @@ Git は CLI で動作するソフトウェアの一つです。traP、とくに 
 Git はたとえば以下のようなコマンドによって操作します。最初の `git` が Git に対するコマンドの指定です。Git に限らず多くの CLI ソフトウェアのコマンドは使用するソフトウェアを指定する接頭辞をつけます。それぞれのコマンドの意味は前編の後半に説明します。
 
 ```sh
-git clone リポジトリURI
+git clone リポジトリのURL
 git checkout ブランチ名
 git pull origin ブランチ名
 git push

@@ -68,7 +68,7 @@ ssh -T ssh://git@git.trap.jp:2200
 以下のように表示されたら、Gitea との SSH 接続に成功しています。
 
 ```txt
-Hi there, {ユーザー名}! You've successfully authenticated with the key named {キー名}, but Gitea does not provide shell access.
+Hi there, ユーザー名! You've successfully authenticated with the key named キー名, but Gitea does not provide shell access.
 If this is unexpected, please log in with password and setup Gitea under another user.
 ```
 
