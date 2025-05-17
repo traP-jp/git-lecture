@@ -1,0 +1,10 @@
+/* .vitepress/theme/custom.css */
+
+:root {
+--vp-c-brand-1: var(--vp-c-red-1);
+--vp-c-tip-1: var(--vp-c-indigo-1);
+--vp-c-tip-2: var(--vp-c-indigo-2);
+--vp-c-tip-3: var(--vp-c-indigo-3);
+--vp-c-tip-soft: var(--vp-c-indigo-soft);
+}
+  
