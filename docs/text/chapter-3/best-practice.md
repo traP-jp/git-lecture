@@ -47,10 +47,10 @@
   </tbody>
 </table>
 
-コミットメッセージに接頭辞をつける場合は `feat: 行った操作` のように、ブランチ名に接頭辞をつける場合は `feat/行う予定の変更` のように書くことが一般的です。traQ フロントエンドリポジトリの [Branches](https://github.com/traPtitech/traQ_S-UI/branches/all) と [Commits](https://github.com/traPtitech/traQ_S-UI/commits/master/) で実例を確認してみましょう。
+コミットメッセージに接頭辞をつける場合は `feat: 行った操作` のように、ブランチ名に接頭辞をつける場合は `feat/取り組む予定の変更` のように書くことが一般的です。traQ フロントエンドリポジトリの [Branches](https://github.com/traPtitech/traQ_S-UI/branches/all) と [Commits](https://github.com/traPtitech/traQ_S-UI/commits/master/) で実例を確認してみましょう。
 
 :::info ブランチ名に含まれるスラッシュ
-Git ではブランチ名にスラッシュ `/` を含めることができます。このスラッシュはディレクトリのパスに含まれる `/` に似た振る舞いを示し、たとえばすでに `feat/ーーを追加` という名のブランチが存在する場合は新たに `feat` という名前のブランチを作ることが許されなくなります。
+Git ではブランチ名にスラッシュ `/` を含めることができます。このスラッシュはディレクトリのパスに含まれる `/` に似た振る舞いを示し、たとえばすでに `docs/README.md 整備` という名のブランチが存在する場合は新たに `docs` という名前のブランチを作ることが許されなくなります。
 :::
 
 ## ブランチ戦略

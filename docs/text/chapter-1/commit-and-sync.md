@@ -7,9 +7,9 @@
 ディレクトリを VSCode で開くには `code` コマンドを用います。ターミナルで以下のコマンドを **1 行ずつ** 実行していくと、3 行目の実行によって VSCode が起動し、Desktop の mydrive が開かれます。
 
 ```sh
-cd ~
-cd Desktop
-code mydrive
+cd ~          # 1. ホームディレクトリに移動
+cd Desktop    # 2. ホームディレクトリ直下の Desktop ディレクトリに移動
+code mydrive  # 3. Desktop の中の mydrive ディレクトリを VSCode で開く
 ```
 
 ウェルカムページが表示されたら閉じ、エディタでは README.md を開いておきます。また、ウィンドウ左のアクティビティバーからソース管理タブ（○ が 3 つ曲線で繋がれた図形）を開き、以下のような画面にしてください。
@@ -72,7 +72,7 @@ VSCode で開いて少し待つと「コミット」ボタンが「変更の同�
 先ほどと違うのは矢印が上ではなく下を向いている点です。これは先ほどの同期が「Desktop の mydrive → Gitea 上の mydrive」だったのに対し、今回の同期が「Gitea 上の mydrive → Downloads の mydrive」であることを表しています。
 :::
 
-「変更の同期 1↓」ボタンを押すと README.md の内容が書き変わり、先ほど行った変更が同期されたことが確認できます。
+「変更の同期 1↓」ボタンを押すと README.md の内容が書き変わります。先ほど Desktop ディレクトリ内の mydrive で行った変更が、今開いている Downloads ディレクトリ内の mydrive にも同期されました。
 
 ![](https://md.trap.jp/uploads/upload_abd67dc27feefeff9b60fe81052d43f9.png)
 

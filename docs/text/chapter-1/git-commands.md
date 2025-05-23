@@ -27,7 +27,7 @@
 <table style="width: 100%; border-collapse: collapse;">
   <thead>
     <tr>
-      <th style="width: auto; text-align: center">操作</th>
+      <th style="width: auto; text-align: center">Git 操作</th>
       <th style="width: 100%;">意味</th>
     </tr>
   </thead>
@@ -46,7 +46,7 @@
     </tr>
     <tr>
       <td style="text-align: center"><strong>commit</strong></td>
-      <td>作業ブランチに変更を加えること</td>
+      <td>作業ブランチに変更を記録する</td>
     </tr>
     <tr>
       <td style="text-align: center"><strong>pull</strong></td>
@@ -64,8 +64,8 @@
 <table style="width: 100%; border-collapse: collapse;">
   <thead>
     <tr>
-      <th style="width: 100%;">操作</th>
-      <th style="width: auto; text-align: center; text-wrap: nowrap">Git コマンド</th>
+      <th style="width: 100%;">ターミナル & VSCode 上での操作</th>
+      <th style="width: auto; text-align: center; text-wrap: nowrap">Git 操作</th>
     </tr>
   </thead>
   <tbody>
@@ -90,8 +90,31 @@
 
 この表には fetch が含まれていませんが、[必要なツール](/text/chapter-1/requirements.html#vscode-の設定) の章で Autofetch 設定を `true` にしたことで作業ブランチへの fetch 操作が 180 秒おきに自動で行われるようになっています。[コミットと同期](/text/chapter-1/commit-and-sync.html#リポジトリの同期) の章で Downloads の mydrive を開いてすぐ「コミット」ボタンが勝手に「変更の同期 1↓」ボタンに変化したのは、この Autofetch が働いたからです。
 
-:::info コミット ≠ ファイルの編集
-commit の説明として「作業ブランチに変更を加えること」と書きましたが、上記の対応から分かるように、ただ単に作業ディレクトリのファイルの内容を編集するだけでは commit にはなりません。ファイルの変更をステージし、明示的にコミットして初めてブランチが伸びます。
+:::tip ターミナルから Git を操作する
+[CLI と GUI](/text/chapter-1/cli-and-gui.html) の章で紹介したように、Git は CLI ソフトウェアなので Git リポジトリの操作は全てターミナル上で行うことができ、そしてそれが本来想定されていた使い方になります。[リポジトリの作成](/text/chapter-1/make-repo.html) および [コミットと同期](/text/chapter-1/commit-and-sync.html) で行ってきた全ての操作は以下のコマンド列で再現することができます。
+
+```sh
+# 1. Desktop ディレクトリと Downloads ディレクトリにリポジトリをクローン
+cd ~/Desktop
+git clone ssh://から始まる文字列
+cd ~/Downloads
+git clone ssh://から始まる文字列
+
+# 2. Desktop ディレクトリの mydrive の README.md に nano で変更を加える
+cd ~/Desktop/mydrive
+nano README.md
+
+# 3. 変更をコミット・プッシュする
+git add README.md
+git commit -m "README.md 更新"
+git push origin main
+
+# 4. Downloads ディレクトリの mydrive で変更をプルする
+cd ~/Downloads/mydrive
+git pull origin main
+```
+
+途中で登場する nano はターミナル上で動作するテキストエディタです。[プログラミング基礎講習会第 1 章の練習問題](https://pg-basic.trap.show/text/chapter-1/practice/nano-test.html) にも登場していますね。`Ctrl` + `X` の同時押しでエディタの終了操作、そこで `y` に続いて `Enter` を押すことで変更の保存ができます。
 :::
 
 日頃の開発で「ブランチにコミットする」という言葉を聞いたら、通常は以下の一連の操作を指すと思ってよいでしょう。
