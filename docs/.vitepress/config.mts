@@ -53,7 +53,7 @@ export default defineConfig({
         text: '発展',
         link: '/text/chapter-3/',
         items: [
-          { text: '認証済みコミット', link: '/text/chapter-3/verified' },
+          { text: 'コミットに署名する', link: '/text/chapter-3/get-verified' },
           { text: '.gitignore', link: '/text/chapter-3/gitignore' },
           { text: 'コンフリクトの解決', link: '/text/chapter-3/conflict' },
           { text: 'マージのしくみ', link: '/text/chapter-3/how-merging-works' },

@@ -16,7 +16,7 @@ mydrive リポジトリで main ブランチから sub ブランチを生やし�
 
 Desktop ディレクトリと Downloads ディレクトリの mydrive がともに main ブランチにいるとします。Desktop の mydrive で README.md を変更してコミットしたのち、Downloads の mydrive で「変更を同期」する前に README.md を変更してコミット、その後「変更を同期」しようとするとコンフリクトが生じることがあります。
 
-コンフリクトが示唆されるのは VSCode 上で「変更の同期」ボタンを押した瞬間です。
+コンフリクトが示唆されるのは VSCode 上で「変更の同期」ボタンを押した瞬間です。実はこのダイアログが出ていてもコンフリクトが発生しているとは限らないのですが、とりあえずこの後の手順を追えばよさそうです。詳しくは次の章で解説します。
 
 ![](https://md.trap.jp/uploads/upload_813056da854bdcdec8d46d44a4eae254.png)
 
