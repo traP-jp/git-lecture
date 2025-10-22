@@ -24,7 +24,7 @@ export default defineConfig({
         link: '/text/chapter-1/',
         items: [
           {
-            text: '事前準備',
+            text: '準備',
             collapsed: false,
             items: [
               { text: '用語の復習', link: '/text/chapter-1/review' },
@@ -46,14 +46,15 @@ export default defineConfig({
           { text: 'リポジトリ', link: '/text/chapter-2/repository' },
           { text: 'ブランチを生やす', link: '/text/chapter-2/grow-a-branch' },
           { text: 'プルリクエストのマージ', link: '/text/chapter-2/merge' },
-          { text: '共同開発の基本', link: '/text/chapter-2/team-development' }
+          { text: '共同開発の基本', link: '/text/chapter-2/team-development' },
+          { text: 'コミットに署名する', link: '/text/chapter-2/get-verified' }
         ]
       },
       {
         text: '発展',
         link: '/text/chapter-3/',
         items: [
-          { text: 'コミットに署名する', link: '/text/chapter-3/get-verified' },
+          { text: 'GitHub デビュー', link: '/text/chapter-3/github-debut' },
           { text: '.gitignore', link: '/text/chapter-3/gitignore' },
           { text: 'コンフリクトの解決', link: '/text/chapter-3/conflict' },
           { text: 'マージのしくみ', link: '/text/chapter-3/how-merging-works' },

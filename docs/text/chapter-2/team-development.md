@@ -88,4 +88,4 @@ README.md は Gitea などのホスティングサービスによって特殊な
 
 ---
 
-[#event/workshop/git/exercise](https://q.trap.jp/channels/event/workshop/git/exercise) の『**後編完走**』にスタンプをつけよう！
+[#event/workshop/git/exercise](https://q.trap.jp/channels/event/workshop/git/exercise) の『**後編ほぼ完走**』にスタンプをつけよう！
