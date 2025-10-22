@@ -54,7 +54,7 @@ export default defineConfig({
         text: '発展',
         link: '/text/chapter-3/',
         items: [
-          { text: 'GitHub デビュー', link: '/text/chapter-3/github-debut' },
+          { text: 'メールアドレスの秘匿', link: '/text/chapter-3/hide-address' },
           { text: '.gitignore', link: '/text/chapter-3/gitignore' },
           { text: 'コンフリクトの解決', link: '/text/chapter-3/conflict' },
           { text: 'マージのしくみ', link: '/text/chapter-3/how-merging-works' },
