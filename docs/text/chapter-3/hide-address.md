@@ -21,6 +21,20 @@ traP Gitea 上のリポジトリは公開範囲が部内に限られますが、
 
 従って、公開リポジトリに不用意にメールアドレスを埋め込むのはリスクと言えます。もちろん、リスクを弁えた上でメールアドレスの公開設定を変更しない人もいます。
 
+:::info メールアドレスが ID だった時代
+
+それぞれのメールアドレスは世界的にユニークであることが保証されているので、かつては個人を表す ID として公開・使用するのが一般的だったようです。コミットにメールアドレスが埋め込まれるのもそのときの慣習の名残といえます。
+
+[SSH キーの登録](/text/chapter-1/gitea-ssh.html#ssh-%E3%82%AD%E3%83%BC%E3%81%AE%E7%94%9F%E6%88%90) において SSH キーを生成するにあたり、ユーザー名を用いて以下のコマンドを実行していただきました。
+```sh
+ssh-keygen -t ed25519 -C ユーザー名
+```
+
+この「ユーザー名」にあたる部分にもメールアドレスを記述する文化が今も一般的です。この部分は公開鍵の末尾に単にラベルとして含まれるテキストであり、技術的にはなんでもよく、メールアドレスである必要はありませんが、2025 年現在の [GitHub Docs](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) にもユーザー名の部分にメールアドレスを記述して SSH キーを生成するコマンド例が載っています。
+
+しかしながら、現代ではメールアドレスが果たす ID としての役割は薄れ、むしろ不用意にさまざまな場所にメールアドレスを書くことがスパムや持ち主の再識別のリスクを高めています。
+:::
+
 メールアドレスを公開したくないというニーズに応えるため、GitHub は各ユーザーに [ダミーのメールアドレス](https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address) を提供しています。コミットメールアドレスをこれに変更することで、個人的に使っているメールアドレスの公開を避けつつ GitHub アカウントとコミットをしっかりと紐づけることができます。このアドレスはメールアドレスとしては機能していません。
 
 ダミーのメールアドレスを利用する方法を説明します。まず GitHub の [E メールの設定](https://github.com/settings/emails) を開き、**Keep my email addresses private** にチェックを入れます。その下の **Block command line pushes that expose my email** にもチェックを入れておくと、ダミーでないメールアドレスでコミットのプッシュを試みたときにブロックしてくれます。

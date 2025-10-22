@@ -40,7 +40,7 @@ git config --global user.name ユーザー名
 ターミナルで以下のコマンドを一つずつ実行してください。
 
 ```sh
-# ユーザー名の設定。traP か GitHub の ID がおすすめ
+# ユーザー名の設定。traP の ID がおすすめ
 git config --global user.name ユーザー名
 
 # メールアドレスの設定。既に GitHub のアカウントを持っていれば同じものにしてください

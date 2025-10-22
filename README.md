@@ -1,6 +1,6 @@
 # 講師のみなさまへ
 
-Git 講習会前に [#event/workshop/git/exercise](https://q.trap.jp/channels/event/workshop/git/exercise) に以下の項目のスタンプをつけておいてほしいです！
+Git 講習会前に [#event/workshop/git/exercise](https://q.trap.jp/channels/event/workshop/git/exercise) に以下の項目のチェックポイントを投稿しておいてほしいです！
 
 - 会場に来た！
 - 必要なツール まで
