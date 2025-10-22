@@ -47,6 +47,7 @@ export default defineConfig({
           { text: 'ブランチを生やす', link: '/text/chapter-2/grow-a-branch' },
           { text: 'プルリクエストのマージ', link: '/text/chapter-2/merge' },
           { text: '共同開発の基本', link: '/text/chapter-2/team-development' },
+          { text: 'メールアドレスの秘匿', link: '/text/chapter-2/hide-address' },
           { text: 'コミットに署名する', link: '/text/chapter-2/get-verified' }
         ]
       },
@@ -54,7 +55,6 @@ export default defineConfig({
         text: '発展',
         link: '/text/chapter-3/',
         items: [
-          { text: 'メールアドレスの秘匿', link: '/text/chapter-3/hide-address' },
           { text: '.gitignore', link: '/text/chapter-3/gitignore' },
           { text: 'コンフリクトの解決', link: '/text/chapter-3/conflict' },
           { text: 'マージのしくみ', link: '/text/chapter-3/how-merging-works' },
