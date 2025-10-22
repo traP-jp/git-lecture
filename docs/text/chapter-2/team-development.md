@@ -85,7 +85,3 @@ README.md は Gitea などのホスティングサービスによって特殊な
 ---
 
 あなたがどれほど Git リポジトリを下手に扱ったとしても、共同開発を立ち行かなくさせることはできません。それを知っていれば必要以上に Git の使用を怖がらずに済むでしょう。それでも不安は不安だ、という人は、Git + Gitea を単なる iCloud Drive や OneDrive の代わりとして普段使いしてみるとよいと思います。手に馴染ませるほど、Git は今まで敬遠していたのが嘘のように堅牢で便利なツールであると分かってくるはずです。
-
----
-
-[#event/workshop/git/exercise](https://q.trap.jp/channels/event/workshop/git/exercise) の『**後編ほぼ完走**』にスタンプをつけよう！

@@ -73,5 +73,5 @@ git config user.email ダミーメールアドレス  # --global をつけない
 
 ### Gitea と GitHub をどちらもよく使う場合
 
-`~/.gitconfig` の内容を直書きし `includeIf` を用いて設定を分岐させる方法がおすすめですが、発展的な内容になるので割愛します。詳しいことは [#random/sodan](https://q.trap.jp/channels/random/sodan) などで質問すると教えてもらえるはず。
+`~/.gitconfig` の内容を直書きし `includeIf` を用いて設定を分岐させる方法がおすすめですが、発展的な内容になるので割愛します。詳しいことは [#event/workshop/git/sodan](https://q.trap.jp/channels/event/workshop/git/sodan) や [#random/sodan](https://q.trap.jp/channels/random/sodan) などで質問すると教えてもらえるはず。
 

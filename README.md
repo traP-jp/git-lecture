@@ -10,6 +10,5 @@ Git 講習会前に [#event/workshop/git/exercise](https://q.trap.jp/channels/ev
 - 前編完走
 - ブランチを生やす まで
 - プルリクエストのマージ まで
-- 後編ほぼ完走
 - 後編完走
 - 完走
