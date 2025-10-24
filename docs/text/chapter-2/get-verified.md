@@ -58,11 +58,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAA
 -----END SSH SIGNATURE-----
 ```
 
-最後に、以下のコミットを **1 行ずつ** 実行してください。
+最後に、以下のコミットを一つずつ実行してください。
 
 ```sh
-git config --global commit.gpgsign true  # コミットの署名を有効にする
-git config --global gpg.format ssh       # SSH での署名を選択
+# コミットの署名を有効にする
+git config --global commit.gpgsign true
+
+# SSH での署名を選択
+git config --global gpg.format ssh
+
+# 署名に使う SSH キーのパスを指定
+git config --global user.signingkey ~/.ssh/id_ed25519.pub
 ```
 
 
@@ -77,8 +83,7 @@ git config --global gpg.format ssh       # SSH での署名を選択
 先ほど「コミットに署名するための仕組みには現在 SSH と GPG の 2 種類があります」と申し上げた通り、SSH と GPG は公開鍵署名のための別個の仕組みです。とすると、先ほど挙げたこのコマンドは少々奇妙です。まるで SSH が GPG の一種であるかのような書き方をしています。
 
 ```sh
-git config --global commit.gpgsign true  # コミットの署名を有効にする
-git config --global gpg.format ssh       # SSH での署名を選択
+git config --global gpg.format ssh  # 「GPG のフォーマットを SSH にする」？
 ```
 
 これは歴史的背景によるものです。当初の Git は GPG を用いたコミット署名のみをサポートしていましたが、2021 年にリリースされた Git 2.34 から SSH による署名が可能になりました。具体的には、従来のプロセスにおける「秘密鍵と署名のフォーマット」を SSH の仕組みで代替する方法が提供されています。その他の部分は依然として GPG（GNU Privacy Guard）方式に従っていますが、ユーザーはより初期設定が簡単な SSH だけでコミットに署名できるようになりました。
