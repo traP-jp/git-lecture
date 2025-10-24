@@ -44,7 +44,7 @@ Gitea の [SSH / GPG キー](https://git.trap.jp/user/settings/keys) のペー�
 トークンをコピペして、その他の場所は以下に倣ってコマンドを実行してください。
 
 ```sh
-echo -n 'トークン' | ssh-keygen -Y sign -n gitea -f ~/.ssh/id_ed25519
+echo -n 'トークン' | ssh-keygen -Y sign -n gitea -f ~/.ssh/id_ed25519.pub
 ```
 
 すると、以下のような形式の SSH 署名が出力されるはずです。これを「Armor 形式の SSH 署名」欄に貼り付けて「確認」ボタンを押します。
