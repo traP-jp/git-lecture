@@ -76,6 +76,14 @@ git config --global user.signingkey ~/.ssh/id_ed25519.pub
 
 ![](https://md.trap.jp/uploads/upload_14c61e8a0a143350905ad2260ead0d08.png)
 
+:::warning ダミーメールアドレスでは署名に失敗します
+
+`git config` で個人用のメールアドレスを設定していれば以上の手順で問題なく署名されますが、[前章](/text/chapter-2/hide-address.html) の手順に従ってダミーアドレスを設定した後では署名に失敗するという現象を観測しました。どうやらこれは traP Gitea の [仕様](https://q.trap.jp/messages/019a1164-f66d-7546-9aff-79f33490c833) みたいです。2025 年現在、Gitea で署名に使えるメールアドレスは [traPortal](https://portal.trap.jp/) で個人用に設定しているただ一つの実メールアドレスに限られています。
+
+traP Gitea で「実メールアドレスでコミットに署名する」ことと「メールアドレスを秘匿して署名を諦める」ことのどちらを優先するかは個々人の価値判断にお任せしますが、GitHub ではこれらの設定を両立させることが可能なので、ぜひ両立させましょう。
+
+:::
+
 [SSH キーの登録](/text/chapter-1/gitea-ssh.html#gitea-%E3%81%AB-ssh-%E3%82%AD%E3%83%BC%E3%82%92%E7%99%BB%E9%8C%B2%E3%81%99%E3%82%8B) で登録した SSH キーは、これまでプライベートリポジトリのクローン・プッシュなどの操作にのみ用いられていましたが、以上の設定によってコミットの署名にも用いられるようになりました。
 
 :::tip SSH と GPG
