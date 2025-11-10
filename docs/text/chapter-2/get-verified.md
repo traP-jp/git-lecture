@@ -86,6 +86,8 @@ traP Gitea で「実メールアドレスでコミットに署名する」こと
 
 :::
 
+Git 操作の利便性を保ちつつ更なる安全性を求める場合には SSH エージェントと呼ばれるソフトウェアに頼ることができます。詳しくは [GitHub Docs](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) などを参照してください。
+
 ---
 
 次のページで Git 講習会本編はゴールです！
