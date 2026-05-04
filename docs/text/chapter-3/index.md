@@ -10,6 +10,15 @@
 
 ---
 
+:::tip windows ユーザーの方へ
+今みなさんが講習会で使用したのは WSL2 という Windows 上で Linux を動かす環境です。ですが、Unity などを用いたゲーム開発には Windows ネイティブ環境での Git の利用が必要になることもあります。
+[Git for Windows 公式](https://gitforwindows.org/)にアクセスして、Download ボタンを押すとインストーラーがダウンロードされます。インストーラーを起動して、画面の指示に従ってインストールしてください。
+[Gitの設定](http://git-lecture.trap.show/text/chapter-1/requirements.html#git-%E3%81%AE%E8%A8%AD%E5%AE%9A)
+の章で行った設定と[SSHの登録](https://git-lecture.trap.show/text/chapter-1/gitea-ssh.html#ssh-%E3%82%AD%E3%83%BC%E3%81%AE%E7%99%BB%E9%8C%B2)をGit for Windows をインストールした後に同様に行ってください。
+:::
+
+---
+
 :::info Git 講習会中級編
 たけのひとさんによって 2024 年度に開催された [Git 講習会中級編](https://q.trap.jp/files/151ef5c6-000e-4477-b767-07cf44fda757) では、プロジェクトやハッカソンのチームリーダー向けに（この後の内容よりも）さらに発展的な内容を取り扱っています。興味があればぜひ資料を確認してみてください。
 :::

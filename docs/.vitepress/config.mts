@@ -48,7 +48,8 @@ export default defineConfig({
           { text: 'プルリクエストのマージ', link: '/text/chapter-2/merge' },
           { text: '共同開発の基本', link: '/text/chapter-2/team-development' },
           { text: 'メールアドレスの秘匿', link: '/text/chapter-2/hide-address' },
-          { text: 'コミットに署名する', link: '/text/chapter-2/get-verified' }
+          { text: 'コミットに署名する', link: '/text/chapter-2/get-verified' },
+          { text: 'リポジトリを爆破する', link: '/text/chapter-2/delete-repo' }
         ]
       },
       {
