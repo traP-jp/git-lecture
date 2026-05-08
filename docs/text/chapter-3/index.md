@@ -10,11 +10,14 @@
 
 ---
 
-:::tip windows ユーザーの方へ
-今みなさんが講習会で使用したのは WSL2 という Windows 上で Linux を動かす環境です。ですが、Unity などを用いたゲーム開発には Windows ネイティブ環境での Git の利用が必要になることもあります。
-[Git for Windows 公式](https://gitforwindows.org/)にアクセスして、Download ボタンを押すとインストーラーがダウンロードされます。インストーラーを起動して、画面の指示に従ってインストールしてください。
-[Gitの設定](http://git-lecture.trap.show/text/chapter-1/requirements.html#git-%E3%81%AE%E8%A8%AD%E5%AE%9A)
-の章で行った設定と[SSHの登録](https://git-lecture.trap.show/text/chapter-1/gitea-ssh.html#ssh-%E3%82%AD%E3%83%BC%E3%81%AE%E7%99%BB%E9%8C%B2)をGit for Windows をインストールした後に同様に行ってください。
+:::tip Windows ユーザーの方へ
+今みなさんが講習会で使用したのは WSL2 という Windows 上で Linux を動かす環境です。ですが、Unity などを用いたゲーム開発には 通常 Windows ネイティブで Git を使うことが多いと思います。
+Windows ネイティブ環境でも[Gitの設定](http://git-lecture.trap.show/text/chapter-1/requirements.html#git-%E3%81%AE%E8%A8%AD%E5%AE%9A)
+の章で行った設定と[SSHの登録](https://git-lecture.trap.show/text/chapter-1/gitea-ssh.html#ssh-%E3%82%AD%E3%83%BC%E3%81%AE%E7%99%BB%E9%8C%B2)をやっておきましょう。
+
+参考: https://qiita.com/takeru-hirai/items/4fbe6593d42f9a844b1c
+
+（リンク先の方法では Git Bash というツールのインストールも行っています。これは Git を扱いやすくしたターミナル環境ですが、普段通り VS Code のターミナルをそのまま使用していただいて問題ありません）
 :::
 
 ---
