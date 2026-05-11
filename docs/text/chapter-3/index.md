@@ -10,6 +10,18 @@
 
 ---
 
+:::tip Windows ユーザーの方へ
+今みなさんが講習会で使用したのは WSL2 という Windows 上で Linux を動かす環境です。ですが、Unity などを用いたゲーム開発には 通常 Windows ネイティブで Git を使うことが多いと思います。
+Windows ネイティブ環境でも[Gitの設定](http://git-lecture.trap.show/text/chapter-1/requirements.html#git-%E3%81%AE%E8%A8%AD%E5%AE%9A)
+の章で行った設定と[SSHの登録](https://git-lecture.trap.show/text/chapter-1/gitea-ssh.html#ssh-%E3%82%AD%E3%83%BC%E3%81%AE%E7%99%BB%E9%8C%B2)をやっておきましょう。
+
+参考: https://qiita.com/takeru-hirai/items/4fbe6593d42f9a844b1c
+
+（リンク先の方法では Git Bash というツールのインストールも行っています。これは Git を扱いやすくしたターミナル環境ですが、普段通り VS Code のターミナルをそのまま使用していただいて問題ありません）
+:::
+
+---
+
 :::info Git 講習会中級編
 たけのひとさんによって 2024 年度に開催された [Git 講習会中級編](https://q.trap.jp/files/151ef5c6-000e-4477-b767-07cf44fda757) では、プロジェクトやハッカソンのチームリーダー向けに（この後の内容よりも）さらに発展的な内容を取り扱っています。興味があればぜひ資料を確認してみてください。
 :::
