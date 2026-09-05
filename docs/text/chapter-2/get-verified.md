@@ -58,7 +58,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAA
 -----END SSH SIGNATURE-----
 ```
 
-最後に、以下のコミットを一つずつ実行してください。
+最後に、以下のコマンドを一つずつ実行してください。
 
 ```sh
 # コミットの署名を有効にする
